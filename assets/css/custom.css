@@ -1,0 +1,11 @@
+/* Custom small overrides for the site */
+/* Show the full publication venue text. Allow wrapping so the entire
+   string is visible instead of being truncated with an ellipsis. */
+.periodical {
+  /* Force a single line and do not truncate with ellipsis.
+     This will display the entire venue on one line when screen
+     space is sufficient. */
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: clip;
+}

@@ -1,14 +1,14 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"chen":
+  - firstname: ["Defang", "D.", "D. Chen", "Defang Chen"]
+    url: https://scholar.google.com/citations?user=F5P_8NkAAAAJ
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"wang":
+  - firstname: ["Can", "Can Wang"]
+    url: https://scholar.google.com/citations?user=C63q3HoAAAAJ
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"lyu":
+  - firstname: ["Siwei", "Siwei Lyu"]
+    url: https://scholar.google.com/citations?user=wefAEM4AAAAJ
 
 "bach":
   - firstname: ["Johann Sebastian", "J. S."]

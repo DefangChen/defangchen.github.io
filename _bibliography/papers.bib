@@ -2,37 +2,59 @@
 ---
 
 @string{aps = {American Physical Society,}}
+@string{aaai = {Proceedings of the AAAI Conference on Artificial Intelligence}}
+@string{cvpr = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}}
+@string{icml = {International Conference on Machine Learning}}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
-}
-
-@book{einstein1956investigations,
+@inproceedings{chen2021cross,
+  abbr={21-AAAI},
   bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+  author    = {Defang Chen and Jian{-}Ping Mei and Yuan Zhang and Can Wang† and Zhe Wang and Yan Feng and Chun Chen},
+  title     = {Cross-Layer Distillation with Semantic Calibration},
+  booktitle = aaai,
+  pages     = {7028--7036},
+  year      = {2021},
+  selected={true},
+  abstract={Knowledge distillation is a technique to enhance the generalization ability of a student model by exploiting outputs from a teacher model. Recently, feature-map based variants explore knowledge transfer between manually assigned teacher-student pairs in intermediate layers for further improvement. However, layer semantics may vary in different neural networks and semantic mismatch in manual layer associations will lead to performance degeneration due to negative regularization. To address this issue, we propose Semantic Calibration for cross-layer Knowledge Distillation (SemCKD), which automatically assigns proper target layers of the teacher model for each student layer with an attention mechanism. With a learned attention distribution, each student layer distills knowledge contained in multiple teacher layers rather than a specific intermediate layer for appropriate cross-layer supervision. We further provide theoretical analysis of the association weights and conduct extensive experiments to demonstrate the effectiveness of our approach.},
+  additional_info={*<span style="color:#ff0e97">Journal version:</span> IEEE Transactions on Knowledge and Data Engineering ([TKDE](https://ieeexplore.ieee.org/abstract/document/9767633))<br><span style="color:#d6336c">Highly-Cited Paper Indexed by [2024](https://scholar.google.com/citations?hl=en&view_op=list_hcore&venue=PV9sQN5dnPsJ.2024&vq=eng_artificialintelligence&cstart=160)/[2025](https://scholar.google.com.tw/citations?hl=en&view_op=list_hcore&venue=PV9sQN5dnPsJ.2025&vq=eng_artificialintelligence&cstart=80) Google Scholar Metrics</span>*},
+  google_scholar_id={tH6gc1N1XXoC},
+  arxiv={2012.03236},
+  code={https://github.com/DefangChen/SemCKD},
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
+@inproceedings{chen2022simkd,
+  abbr={22-CVPR},
   bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+  title={Knowledge Distillation with the Reused Teacher Classifier},
+  author={Chen, Defang and Mei, Jian-Ping and Zhang, Hailin and Wang†, Can and Feng, Yan and Chen, Chun},
+  booktitle=cvpr,
+  pages={11933--11942},
+  year={2022},
+  selected={true},
+  abstract={Knowledge distillation aims to compress a powerful yet cumbersome teacher model into a lightweight student model without much sacrifice of performance. For this purpose, various approaches have been proposed over the past few years, generally with elaborately designed knowledge representations, which in turn increase the difficulty of model development and interpretation. In contrast, we empirically show that a simple knowledge distillation technique is enough to significantly narrow down the teacher-student performance gap. We directly reuse the discriminative classifier from the pre-trained teacher model for student inference and train a student encoder through feature alignment with a single \ell_2 loss. In this way, the student model is able to achieve exactly the same performance as the teacher model provided that their extracted features are perfectly aligned. An additional projector is developed to help the student encoder match with the teacher classifier, which renders our technique applicable to various teacher and student architectures. Extensive experiments demonstrate that our technique achieves state-of-the-art results at the modest cost of compression ratio due to the added projector},
+  google_scholar_id={mNrWkgRL2YcC},
+  arxiv={2203.14001},
+  code={https://github.com/DefangChen/SimKD},
 }
 
+@inproceedings{chen2024trajectory,
+  abbr={24-ICML},
+  bibtex_show={true},
+  title={On the Trajectory Regularity of ODE-based Diffusion Sampling},
+  author={Chen, Defang and Zhou, Zhenyu and Wang, Can and Shen, Chunhua and Lyu, Siwei},
+  booktitle=icml,
+  pages={7905--7934},
+  year={2024},
+  selected={true},
+  abstract={Diffusion-based generative models use stochastic differential equations (SDEs) and their equivalent ordinary differential equations (ODEs) to establish a smooth connection between a complex data distribution and a tractable prior distribution. In this paper, we identify several intriguing trajectory properties in the ODE-based sampling process of diffusion models. We characterize an implicit denoising trajectory and discuss its vital role in forming the coupled sampling trajectory with a strong shape regularity, regardless of the generated content. We also describe a dynamic programming-based scheme to make the time schedule in sampling better fit the underlying trajectory structure. This simple strategy requires minimal modification to any given ODE-based numerical solvers and incurs negligible computational cost, while delivering superior performance in image generation, especially in 5\sim 10 function evaluations. },
+  additional_info={*<span style="color:#ff0e97">Early version:</span> [A Geometric Perspective on Diffusion Models (2305)](https://arxiv.org/abs/2305.19947)*},
+  google_scholar_id={Ak0FvsSvgGUC},
+  arxiv={2405.11326},
+  code={https://github.com/zju-pi/diff-sampler},
+}
+
+
+@comment{
 @article{PhysRev.47.777,
   abbr={PhysRev},
   title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
@@ -61,35 +83,8 @@
   inspirehep_id = {3255}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
 
 @Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
   abbr={Ann. Phys.},
   title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
   author={Albert Einstein},
@@ -103,13 +98,4 @@
   award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
   award_name={Nobel Prize}
 }
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
 }

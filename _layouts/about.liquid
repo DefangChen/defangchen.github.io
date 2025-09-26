@@ -32,7 +32,8 @@ layout: default
             cache_bust=true
           %}
         {% endif %}
-        {% if page.profile.more_info %}
+        {% comment %}Only show more_info if it exists and the front-matter flag `profile.show_more_info` is not set to false{% endcomment %}
+        {% if page.profile.more_info and page.profile.show_more_info != false %}
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}
       </div>
@@ -69,7 +70,13 @@ layout: default
       <div class="social">
         <div class="contact-icons">{% include social.liquid %}</div>
 
-        <div class="contact-note">{{ site.contact_note }}</div>
+        <div class="contact-note">
+          {{ site.contact_note }}
+          {% comment %}Append automatic build time as last-updated (uses Jekyll build time site.time){% endcomment %}
+          <div class="last-updated" style="margin-top:0.25rem; font-size:0.9em; color:#555;">
+            Last updated: {{ site.time | date: "%Y-%m-%d %H:%M %Z" }}
+          </div>
+        </div>
       </div>
     {% endif %}
 
