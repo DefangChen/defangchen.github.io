@@ -5,11 +5,26 @@
 @string{aaai = {Proceedings of the AAAI Conference on Artificial Intelligence}}
 @string{cvpr = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}}
 @string{icml = {International Conference on Machine Learning}}
+@string{neurips = {{Advances in Neural Information Processing Systems}}}
+
+@inproceedings{chen2020online,
+  abbr={20-AAAI},
+  bibtex_show={true},
+  title={Online Knowledge Distillation with Diverse Peers},
+  author={Chen, Defang and Mei, Jian-Ping and Wang, Can and Feng, Yan and Chen, Chun},
+  booktitle=aaai,
+  pages={3430--3437},
+  year={2020},
+  abstract={Distillation is an effective knowledge-transfer technique that uses predicted distributions of a powerful teacher model as soft targets to train a less-parameterized student model. A pre-trained high capacity teacher, however, is not always available. Recently proposed online variants use the aggregated intermediate predictions of multiple student models as targets to train each student model. Although group-derived targets give a good recipe for teacher-free distillation, group members are homogenized quickly with simple aggregation functions, leading to early saturated solutions. In this work, we propose Online Knowledge Distillation with Diverse peers (OKDDip), which performs two-level distillation during training with multiple auxiliary peers and one group leader. In the first-level distillation, each auxiliary peer holds an individual set of aggregation weights generated with an attention-based mechanism to derive its own targets from predictions of other auxiliary peers. Learning from distinct target distributions helps to boost peer diversity for effectiveness of group-based distillation. The second-level distillation is performed to transfer the knowledge in the ensemble of auxiliary peers further to the group leader, i.e., the model used for inference. Experimental results show that the proposed framework consistently gives better performance than state-of-the-art approaches without sacrificing training or inference complexity, demonstrating the effectiveness of the proposed two-level distillation framework.},
+  additional_info={*<span style="color:#d6336c">Highly-Cited Paper Indexed by [2024](https://scholar.google.com/citations?hl=en&view_op=list_hcore&venue=PV9sQN5dnPsJ.2024&vq=eng_artificialintelligence&cstart=140)/[2025](https://scholar.google.com.tw/citations?hl=en&view_op=list_hcore&venue=PV9sQN5dnPsJ.2025&vq=eng_artificialintelligence&cstart=100) Google Scholar Metrics</span>*},
+  arxiv={1912.00350},
+  code={https://github.com/DefangChen/OKDDip},
+}
 
 @inproceedings{chen2021cross,
   abbr={21-AAAI},
   bibtex_show={true},
-  author    = {Defang Chen and Jian{-}Ping Mei and Yuan Zhang and Can Wang† and Zhe Wang and Yan Feng and Chun Chen},
+  author    = {Defang Chen and Jian{-}Ping Mei and Yuan Zhang and Can Wang and Zhe Wang and Yan Feng and Chun Chen},
   title     = {Cross-Layer Distillation with Semantic Calibration},
   booktitle = aaai,
   pages     = {7028--7036},
@@ -22,11 +37,38 @@
   code={https://github.com/DefangChen/SemCKD},
 }
 
+@inproceedings{zhou2021distilling,
+  abbr={21-ICCV},
+  bibtex_show={true},
+  title={Distilling holistic knowledge with graph neural networks},
+  author={Zhou, Sheng and Wang, Yucheng and Chen, Defang and Chen, Jiawei and Wang, Xin and Wang, Can and Bu, Jiajun},
+  booktitle={Proceedings of the IEEE/CVF international conference on computer vision},
+  pages={10387--10396},
+  year={2021},
+  abstract={Knowledge Distillation (KD) aims at transferring knowledge from a larger well-optimized teacher network to a smaller learnable student network. Existing KD methods have mainly considered two types of knowledge, namely the individual knowledge and the relational knowledge. However, these two types of knowledge are usually modeled independently while the inherent correlations between them are largely ignored. It is critical for sufficient student network learning to integrate both individual knowledge and relational knowledge while reserving their inherent correlation. In this paper, we propose to distill the novel holistic knowledge based on an attributed graph constructed among instances. The holistic knowledge is represented as a unified graph-based embedding by aggregating individual knowledge from relational neighborhood samples with graph neural networks, the student network is learned by distilling the holistic knowledge in a contrastive manner. Extensive experiments and ablation studies are conducted on benchmark datasets, the results demonstrate the effectiveness of the proposed method.},
+  arxiv={2108.05507},
+  code={https://github.com/wyc-ruiker/HKD},
+}
+
+@inproceedings{zhang2022confidence,
+  abbr={22-ICASSP},
+  bibtex_show={true},
+  title={Confidence-aware multi-teacher knowledge distillation},
+  author={Zhang, Hailin and Chen, Defang and Wang, Can},
+  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing},
+  pages={4498--4502},
+  year={2022},
+  abstract={Knowledge distillation is initially introduced to utilize additional supervision from a single teacher model for the student model training. To boost the student performance, some recent variants attempt to exploit diverse knowledge sources from multiple teachers. However, existing studies mainly integrate knowledge from diverse sources by averaging over multiple teacher predictions or combining them using other label-free strategies, which may mislead student in the presence of low-quality teacher predictions. To tackle this problem, we propose Confidence-Aware Multi-teacher Knowledge Distillation (CA-MKD), which adaptively assigns sample-wise reliability for each teacher prediction with the help of ground-truth labels, with those teacher predictions close to one-hot labels assigned large weights. Besides, CA-MKD incorporates features in intermediate layers to stable the knowledge transfer process. Extensive experiments show our CA-MKD consistently outperforms all compared state-of-the-art methods across various teacher-student architectures.},
+  arxiv={2201.00007},
+  code={https://github.com/Rorozhl/CA-MKD},
+}
+
+
 @inproceedings{chen2022simkd,
   abbr={22-CVPR},
   bibtex_show={true},
   title={Knowledge Distillation with the Reused Teacher Classifier},
-  author={Chen, Defang and Mei, Jian-Ping and Zhang, Hailin and Wang†, Can and Feng, Yan and Chen, Chun},
+  author={Chen, Defang and Mei, Jian-Ping and Zhang, Hailin and Wang, Can and Feng, Yan and Chen, Chun},
   booktitle=cvpr,
   pages={11933--11942},
   year={2022},
@@ -35,22 +77,6 @@
   Xgoogle_scholar_id={mNrWkgRL2YcC},
   arxiv={2203.14001},
   code={https://github.com/DefangChen/SimKD},
-}
-
-@inproceedings{chen2024trajectory,
-  abbr={24-ICML},
-  bibtex_show={true},
-  title={On the Trajectory Regularity of ODE-based Diffusion Sampling},
-  author={Chen, Defang and Zhou, Zhenyu and Wang, Can and Shen, Chunhua and Lyu, Siwei},
-  booktitle=icml,
-  pages={7905--7934},
-  year={2024},
-  selected={true},
-  abstract={Diffusion-based generative models use stochastic differential equations (SDEs) and their equivalent ordinary differential equations (ODEs) to establish a smooth connection between a complex data distribution and a tractable prior distribution. In this paper, we identify several intriguing trajectory properties in the ODE-based sampling process of diffusion models. We characterize an implicit denoising trajectory and discuss its vital role in forming the coupled sampling trajectory with a strong shape regularity, regardless of the generated content. We also describe a dynamic programming-based scheme to make the time schedule in sampling better fit the underlying trajectory structure. This simple strategy requires minimal modification to any given ODE-based numerical solvers and incurs negligible computational cost, while delivering superior performance in image generation, especially in 5\sim 10 function evaluations. },
-  additional_info={*<span style="color:#ff0e97">Early version:</span> [A Geometric Perspective on Diffusion Models (2305)](https://arxiv.org/abs/2305.19947)*},
-  Xgoogle_scholar_id={Ak0FvsSvgGUC},
-  arxiv={2405.11326},
-  code={https://github.com/zju-pi/diff-sampler},
 }
 
 @inproceedings{zhou2024fast,
@@ -64,6 +90,35 @@
   selected={true},
   abstract={Sampling from diffusion models can be treated as solving the corresponding ordinary differential equations (ODEs), with the aim of obtaining an accurate solution with as few number of function evaluations (NFE) as possible. Recently, various fast samplers utilizing higher-order ODE solvers have emerged and achieved better performance than the initial first-order one. However, these numerical methods inherently result in certain approximation errors, which significantly degrades sample quality with extremely small NFE (e.g., around 5). In contrast, based on the geometric observation that each sampling trajectory almost lies in a two-dimensional subspace embedded in the ambient space, we propose Approximate MEan-Direction Solver (AMED-Solver) that eliminates truncation errors by directly learning the mean direction for fast diffusion sampling. Besides, our method can be easily used as a plugin to further improve existing ODE-based samplers. Extensive experiments on image synthesis with the resolution ranging from 32 to 512 demonstrate the effectiveness of our method. With only 5 NFE, we achieve 6.61 FID on CIFAR-10, 10.74 FID on ImageNet 64\times64, and 13.20 FID on LSUN Bedroom.},
   arxiv={2312.00094},
+  code={https://github.com/zju-pi/diff-sampler},
+}
+
+@inproceedings{chen2024trajectory,
+  abbr={24-ICML},
+  bibtex_show={true},
+  title={On the Trajectory Regularity of ODE-based Diffusion Sampling},
+  author={Chen, Defang and Zhou, Zhenyu and Wang, Can and Shen, Chunhua and Lyu, Siwei},
+  booktitle=icml,
+  pages={7905--7934},
+  year={2024},
+  selected={true},
+  abstract={Diffusion-based generative models use stochastic differential equations (SDEs) and their equivalent ordinary differential equations (ODEs) to establish a smooth connection between a complex data distribution and a tractable prior distribution. In this paper, we identify several intriguing trajectory properties in the ODE-based sampling process of diffusion models. We characterize an implicit denoising trajectory and discuss its vital role in forming the coupled sampling trajectory with a strong shape regularity, regardless of the generated content. We also describe a dynamic programming-based scheme to make the time schedule in sampling better fit the underlying trajectory structure. This simple strategy requires minimal modification to any given ODE-based numerical solvers and incurs negligible computational cost, while delivering superior performance in image generation, especially in 5\sim 10 function evaluations. },
+  additional_info={*<span style="color:#ff0e97">Early version:</span> [A Geometric Perspective on Diffusion Models (May, 2023)](https://arxiv.org/abs/2305.19947)*},
+  Xgoogle_scholar_id={Ak0FvsSvgGUC},
+  arxiv={2405.11326},
+  code={https://github.com/zju-pi/diff-sampler},
+}
+
+@inproceedings{zhou2024simple,
+  abbr={24-NeurIPS},
+  bibtex_show={true},
+  title={Simple and fast distillation of diffusion models},
+  author={Zhou, Zhenyu and Chen†, Defang and Wang, Can and Chen, Chun and Lyu, Siwei},
+  booktitle=neurips,
+  pages={40831--40860},
+  year={2024},
+  abstract={Diffusion-based generative models have demonstrated their powerful performance across various tasks, but this comes at a cost of the slow sampling speed. To achieve both efficient and high-quality synthesis, various distillation-based accelerated sampling methods have been developed recently. However, they generally require time-consuming fine tuning with elaborate designs to achieve satisfactory performance in a specific number of function evaluation (NFE), making them difficult to employ in practice. To address this issue, we propose Simple and Fast Distillation (SFD) of diffusion models, which simplifies the paradigm used in existing methods and largely shortens their fine-tuning time up to 1000 . We begin with a vanilla distillation-based sampling method and boost its performance to state of the art by identifying and addressing several small yet vital factors affecting the synthesis efficiency and quality. Our method can also achieve sampling with variable NFEs using a single distilled model. Extensive experiments demonstrate that SFD strikes a good balance between the sample quality and fine-tuning costs in few-step image generation task. For example, SFD achieves 4.53 FID (NFE=2) on CIFAR-10 with only 0.64 hours of fine-tuning on a single NVIDIA A100 GPU.},
+  arxiv={2409.19681},
   code={https://github.com/zju-pi/diff-sampler},
 }
 

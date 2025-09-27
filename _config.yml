@@ -291,7 +291,7 @@ scholar:
   # Sort bibliography entries by year (and descending order). This makes
   # bibliographies (including filtered ones like selected papers) appear
   # newest-first during site generation.
-  sort_by: year
+  sort_by: arxiv
   order: descending
 
 # Display different badges withs stats for your publications
