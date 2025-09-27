@@ -10,16 +10,16 @@
   - firstname: ["Siwei", "Siwei Lyu"]
     url: https://scholar.google.com/citations?user=wefAEM4AAAAJ
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"zhou":
+  - firstname: ["Zhenyu", "Zhenyu Zhou"]
+    url: https://scholar.google.com/citations?user=PR0YPk4AAAAJ
 
   - firstname: ["Carl Philipp Emanuel", "C. P. E."]
     url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"shen":
+  - firstname: ["Chunhua", "Chunhua Shen"]
+    url: https://scholar.google.com/citations?user=Ljk2BvIAAAAJ
 
 "schrodinger":
   - firstname: ["Erwin"]

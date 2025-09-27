@@ -17,7 +17,7 @@
   selected={true},
   abstract={Knowledge distillation is a technique to enhance the generalization ability of a student model by exploiting outputs from a teacher model. Recently, feature-map based variants explore knowledge transfer between manually assigned teacher-student pairs in intermediate layers for further improvement. However, layer semantics may vary in different neural networks and semantic mismatch in manual layer associations will lead to performance degeneration due to negative regularization. To address this issue, we propose Semantic Calibration for cross-layer Knowledge Distillation (SemCKD), which automatically assigns proper target layers of the teacher model for each student layer with an attention mechanism. With a learned attention distribution, each student layer distills knowledge contained in multiple teacher layers rather than a specific intermediate layer for appropriate cross-layer supervision. We further provide theoretical analysis of the association weights and conduct extensive experiments to demonstrate the effectiveness of our approach.},
   additional_info={*<span style="color:#ff0e97">Journal version:</span> IEEE Transactions on Knowledge and Data Engineering ([TKDE](https://ieeexplore.ieee.org/abstract/document/9767633))<br><span style="color:#d6336c">Highly-Cited Paper Indexed by [2024](https://scholar.google.com/citations?hl=en&view_op=list_hcore&venue=PV9sQN5dnPsJ.2024&vq=eng_artificialintelligence&cstart=160)/[2025](https://scholar.google.com.tw/citations?hl=en&view_op=list_hcore&venue=PV9sQN5dnPsJ.2025&vq=eng_artificialintelligence&cstart=80) Google Scholar Metrics</span>*},
-  google_scholar_id={tH6gc1N1XXoC},
+  Xgoogle_scholar_id={tH6gc1N1XXoC},
   arxiv={2012.03236},
   code={https://github.com/DefangChen/SemCKD},
 }
@@ -32,7 +32,7 @@
   year={2022},
   selected={true},
   abstract={Knowledge distillation aims to compress a powerful yet cumbersome teacher model into a lightweight student model without much sacrifice of performance. For this purpose, various approaches have been proposed over the past few years, generally with elaborately designed knowledge representations, which in turn increase the difficulty of model development and interpretation. In contrast, we empirically show that a simple knowledge distillation technique is enough to significantly narrow down the teacher-student performance gap. We directly reuse the discriminative classifier from the pre-trained teacher model for student inference and train a student encoder through feature alignment with a single \ell_2 loss. In this way, the student model is able to achieve exactly the same performance as the teacher model provided that their extracted features are perfectly aligned. An additional projector is developed to help the student encoder match with the teacher classifier, which renders our technique applicable to various teacher and student architectures. Extensive experiments demonstrate that our technique achieves state-of-the-art results at the modest cost of compression ratio due to the added projector},
-  google_scholar_id={mNrWkgRL2YcC},
+  Xgoogle_scholar_id={mNrWkgRL2YcC},
   arxiv={2203.14001},
   code={https://github.com/DefangChen/SimKD},
 }
@@ -48,8 +48,22 @@
   selected={true},
   abstract={Diffusion-based generative models use stochastic differential equations (SDEs) and their equivalent ordinary differential equations (ODEs) to establish a smooth connection between a complex data distribution and a tractable prior distribution. In this paper, we identify several intriguing trajectory properties in the ODE-based sampling process of diffusion models. We characterize an implicit denoising trajectory and discuss its vital role in forming the coupled sampling trajectory with a strong shape regularity, regardless of the generated content. We also describe a dynamic programming-based scheme to make the time schedule in sampling better fit the underlying trajectory structure. This simple strategy requires minimal modification to any given ODE-based numerical solvers and incurs negligible computational cost, while delivering superior performance in image generation, especially in 5\sim 10 function evaluations. },
   additional_info={*<span style="color:#ff0e97">Early version:</span> [A Geometric Perspective on Diffusion Models (2305)](https://arxiv.org/abs/2305.19947)*},
-  google_scholar_id={Ak0FvsSvgGUC},
+  Xgoogle_scholar_id={Ak0FvsSvgGUC},
   arxiv={2405.11326},
+  code={https://github.com/zju-pi/diff-sampler},
+}
+
+@inproceedings{zhou2024fast,
+  abbr={24-CVPR},
+  bibtex_show={true},
+  title={Fast ODE-based Sampling for Diffusion Models in Around 5 Steps},
+  author={Zhou, Zhenyu and Chen†, Defang and Wang, Can and Chen, Chun},
+  booktitle=cvpr,
+  pages={7777--7786},
+  year={2024},
+  selected={true},
+  abstract={Sampling from diffusion models can be treated as solving the corresponding ordinary differential equations (ODEs), with the aim of obtaining an accurate solution with as few number of function evaluations (NFE) as possible. Recently, various fast samplers utilizing higher-order ODE solvers have emerged and achieved better performance than the initial first-order one. However, these numerical methods inherently result in certain approximation errors, which significantly degrades sample quality with extremely small NFE (e.g., around 5). In contrast, based on the geometric observation that each sampling trajectory almost lies in a two-dimensional subspace embedded in the ambient space, we propose Approximate MEan-Direction Solver (AMED-Solver) that eliminates truncation errors by directly learning the mean direction for fast diffusion sampling. Besides, our method can be easily used as a plugin to further improve existing ODE-based samplers. Extensive experiments on image synthesis with the resolution ranging from 32 to 512 demonstrate the effectiveness of our method. With only 5 NFE, we achieve 6.61 FID on CIFAR-10, 10.74 FID on ImageNet 64\times64, and 13.20 FID on LSUN Bedroom.},
+  arxiv={2312.00094},
   code={https://github.com/zju-pi/diff-sampler},
 }
 
