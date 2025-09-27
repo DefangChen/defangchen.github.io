@@ -184,7 +184,8 @@
     </div>
 
     {% if entry.additional_info %}
-      <div class="additional-info">{%- capture _tmp %}{{ entry.additional_info | markdownify }}{% endcapture -%}
+      <div class="additional-info">
+        {%- capture _tmp %}{{ entry.additional_info | markdownify }}{% endcapture -%}
         {{- _tmp | remove: '<p>' | remove: '</p>' -}}
       </div>
     {% endif %}

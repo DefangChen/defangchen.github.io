@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Defang
-middle_name: 
+middle_name:
 last_name: Chen
 contact_note: >
   I will occasionally update my homepage.
@@ -346,8 +346,6 @@ external_links:
   rel: external nofollow noopener
   target: _blank
   exclude:
-  
-  
 
 # -----------------------------------------------------------------------------
 # Responsive WebP Images
