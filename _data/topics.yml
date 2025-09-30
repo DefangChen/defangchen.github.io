@@ -1,0 +1,19 @@
+distillation:
+  name: "Distillation"
+  color: "#1f77b4"
+
+diffusion:
+  name: "Diffusion"
+  color: "#ff7f0e"
+
+survey:
+  name: "Survey"
+  color: "#2ca02c"
+
+theory:
+  name: "Theory"
+  color: "#9467bd"
+
+other:
+  name: "Other"
+  color: "#6c757d"

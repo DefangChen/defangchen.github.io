@@ -6,15 +6,20 @@
 @string{cvpr = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}}
 @string{icml = {International Conference on Machine Learning}}
 @string{neurips = {{Advances in Neural Information Processing Systems}}}
+@string{tmlr = {Transactions on Machine Learning Research}}
 
 @inproceedings{chen2020online,
   abbr={20-AAAI},
+  topic={Distillation},
   bibtex_show={true},
   title={Online Knowledge Distillation with Diverse Peers},
   author={Chen, Defang and Mei, Jian-Ping and Wang, Can and Feng, Yan and Chen, Chun},
   booktitle=aaai,
   pages={3430--3437},
   year={2020},
+  pdf={20AAAI.pdf},
+  review={20AAAI_review.pdf},
+  response={20AAAI_response.pdf},
   abstract={Distillation is an effective knowledge-transfer technique that uses predicted distributions of a powerful teacher model as soft targets to train a less-parameterized student model. A pre-trained high capacity teacher, however, is not always available. Recently proposed online variants use the aggregated intermediate predictions of multiple student models as targets to train each student model. Although group-derived targets give a good recipe for teacher-free distillation, group members are homogenized quickly with simple aggregation functions, leading to early saturated solutions. In this work, we propose Online Knowledge Distillation with Diverse peers (OKDDip), which performs two-level distillation during training with multiple auxiliary peers and one group leader. In the first-level distillation, each auxiliary peer holds an individual set of aggregation weights generated with an attention-based mechanism to derive its own targets from predictions of other auxiliary peers. Learning from distinct target distributions helps to boost peer diversity for effectiveness of group-based distillation. The second-level distillation is performed to transfer the knowledge in the ensemble of auxiliary peers further to the group leader, i.e., the model used for inference. Experimental results show that the proposed framework consistently gives better performance than state-of-the-art approaches without sacrificing training or inference complexity, demonstrating the effectiveness of the proposed two-level distillation framework.},
   additional_info={*<span style="color:#d6336c">Highly-Cited Paper Indexed by [2024](https://scholar.google.com/citations?hl=en&view_op=list_hcore&venue=PV9sQN5dnPsJ.2024&vq=eng_artificialintelligence&cstart=140)/[2025](https://scholar.google.com.tw/citations?hl=en&view_op=list_hcore&venue=PV9sQN5dnPsJ.2025&vq=eng_artificialintelligence&cstart=100) Google Scholar Metrics</span>*},
   arxiv={1912.00350},
@@ -23,6 +28,7 @@
 
 @inproceedings{chen2021cross,
   abbr={21-AAAI},
+  topic={Distillation},
   bibtex_show={true},
   author    = {Defang Chen and Jian{-}Ping Mei and Yuan Zhang and Can Wang and Zhe Wang and Yan Feng and Chun Chen},
   title     = {Cross-Layer Distillation with Semantic Calibration},
@@ -31,7 +37,7 @@
   year      = {2021},
   selected={true},
   abstract={Knowledge distillation is a technique to enhance the generalization ability of a student model by exploiting outputs from a teacher model. Recently, feature-map based variants explore knowledge transfer between manually assigned teacher-student pairs in intermediate layers for further improvement. However, layer semantics may vary in different neural networks and semantic mismatch in manual layer associations will lead to performance degeneration due to negative regularization. To address this issue, we propose Semantic Calibration for cross-layer Knowledge Distillation (SemCKD), which automatically assigns proper target layers of the teacher model for each student layer with an attention mechanism. With a learned attention distribution, each student layer distills knowledge contained in multiple teacher layers rather than a specific intermediate layer for appropriate cross-layer supervision. We further provide theoretical analysis of the association weights and conduct extensive experiments to demonstrate the effectiveness of our approach.},
-  additional_info={*<span style="color:#ff0e97">Journal version:</span> IEEE Transactions on Knowledge and Data Engineering ([TKDE](https://ieeexplore.ieee.org/abstract/document/9767633))<br><span style="color:#d6336c">Highly-Cited Paper Indexed by [2024](https://scholar.google.com/citations?hl=en&view_op=list_hcore&venue=PV9sQN5dnPsJ.2024&vq=eng_artificialintelligence&cstart=160)/[2025](https://scholar.google.com.tw/citations?hl=en&view_op=list_hcore&venue=PV9sQN5dnPsJ.2025&vq=eng_artificialintelligence&cstart=80) Google Scholar Metrics</span>*},
+  additional_info={*<strong><span style="color:#ff6c0c">Journal version:</span></strong> IEEE Transactions on Knowledge and Data Engineering ([TKDE](https://ieeexplore.ieee.org/abstract/document/9767633))<br><span style="color:#d6336c">Highly-Cited Paper Indexed by [2024](https://scholar.google.com/citations?hl=en&view_op=list_hcore&venue=PV9sQN5dnPsJ.2024&vq=eng_artificialintelligence&cstart=160)/[2025](https://scholar.google.com.tw/citations?hl=en&view_op=list_hcore&venue=PV9sQN5dnPsJ.2025&vq=eng_artificialintelligence&cstart=80) Google Scholar Metrics</span>*},
   Xgoogle_scholar_id={tH6gc1N1XXoC},
   arxiv={2012.03236},
   code={https://github.com/DefangChen/SemCKD},
@@ -39,6 +45,7 @@
 
 @inproceedings{zhou2021distilling,
   abbr={21-ICCV},
+  topic={Distillation},
   bibtex_show={true},
   title={Distilling holistic knowledge with graph neural networks},
   author={Zhou, Sheng and Wang, Yucheng and Chen, Defang and Chen, Jiawei and Wang, Xin and Wang, Can and Bu, Jiajun},
@@ -52,6 +59,7 @@
 
 @inproceedings{zhang2022confidence,
   abbr={22-ICASSP},
+  topic={Distillation},
   bibtex_show={true},
   title={Confidence-aware multi-teacher knowledge distillation},
   author={Zhang, Hailin and Chen, Defang and Wang, Can},
@@ -66,6 +74,7 @@
 
 @inproceedings{chen2022simkd,
   abbr={22-CVPR},
+  topic={Distillation},
   bibtex_show={true},
   title={Knowledge Distillation with the Reused Teacher Classifier},
   author={Chen, Defang and Mei, Jian-Ping and Zhang, Hailin and Wang, Can and Feng, Yan and Chen, Chun},
@@ -81,6 +90,7 @@
 
 @inproceedings{zhou2024fast,
   abbr={24-CVPR},
+  topic={Diffusion},
   bibtex_show={true},
   title={Fast ODE-based Sampling for Diffusion Models in Around 5 Steps},
   author={Zhou, Zhenyu and Chen†, Defang and Wang, Can and Chen, Chun},
@@ -95,6 +105,7 @@
 
 @inproceedings{chen2024trajectory,
   abbr={24-ICML},
+  topic={Diffusion},
   bibtex_show={true},
   title={On the Trajectory Regularity of ODE-based Diffusion Sampling},
   author={Chen, Defang and Zhou, Zhenyu and Wang, Can and Shen, Chunhua and Lyu, Siwei},
@@ -103,7 +114,7 @@
   year={2024},
   selected={true},
   abstract={Diffusion-based generative models use stochastic differential equations (SDEs) and their equivalent ordinary differential equations (ODEs) to establish a smooth connection between a complex data distribution and a tractable prior distribution. In this paper, we identify several intriguing trajectory properties in the ODE-based sampling process of diffusion models. We characterize an implicit denoising trajectory and discuss its vital role in forming the coupled sampling trajectory with a strong shape regularity, regardless of the generated content. We also describe a dynamic programming-based scheme to make the time schedule in sampling better fit the underlying trajectory structure. This simple strategy requires minimal modification to any given ODE-based numerical solvers and incurs negligible computational cost, while delivering superior performance in image generation, especially in 5\sim 10 function evaluations. },
-  additional_info={*<span style="color:#ff0e97">Early version:</span> [A Geometric Perspective on Diffusion Models (May, 2023)](https://arxiv.org/abs/2305.19947)*},
+  additional_info={*<strong><span style="color:#ff6c0c">Early version:</span></strong> [A Geometric Perspective on Diffusion Models (May, 2023)](https://arxiv.org/abs/2305.19947)*},
   Xgoogle_scholar_id={Ak0FvsSvgGUC},
   arxiv={2405.11326},
   code={https://github.com/zju-pi/diff-sampler},
@@ -111,6 +122,7 @@
 
 @inproceedings{zhou2024simple,
   abbr={24-NeurIPS},
+  topic={Diffusion},
   bibtex_show={true},
   title={Simple and fast distillation of diffusion models},
   author={Zhou, Zhenyu and Chen†, Defang and Wang, Can and Chen, Chun and Lyu, Siwei},
@@ -120,6 +132,20 @@
   abstract={Diffusion-based generative models have demonstrated their powerful performance across various tasks, but this comes at a cost of the slow sampling speed. To achieve both efficient and high-quality synthesis, various distillation-based accelerated sampling methods have been developed recently. However, they generally require time-consuming fine tuning with elaborate designs to achieve satisfactory performance in a specific number of function evaluation (NFE), making them difficult to employ in practice. To address this issue, we propose Simple and Fast Distillation (SFD) of diffusion models, which simplifies the paradigm used in existing methods and largely shortens their fine-tuning time up to 1000 . We begin with a vanilla distillation-based sampling method and boost its performance to state of the art by identifying and addressing several small yet vital factors affecting the synthesis efficiency and quality. Our method can also achieve sampling with variable NFEs using a single distilled model. Extensive experiments demonstrate that SFD strikes a good balance between the sample quality and fine-tuning costs in few-step image generation task. For example, SFD achieves 4.53 FID (NFE=2) on CIFAR-10 with only 0.64 hours of fine-tuning on a single NVIDIA A100 GPU.},
   arxiv={2409.19681},
   code={https://github.com/zju-pi/diff-sampler},
+}
+
+@article{zhan2025conditional,
+  abbr={25-TMLR},
+  topic={Survey},
+  bibtex_show={true},
+  title={Conditional Image Synthesis with Diffusion Models: A Survey},
+  author={Zhan, Zheyuan and Chen†, Defang and Mei, Jian-Ping and Zhao, Zhenghe and Chen, Jiawei and Chen, Chun and Lyu, Siwei and Wang, Can},
+  journal=tmlr,
+  year={2025},
+  month={May},
+  abstract={Conditional image synthesis based on user-specified requirements is a key component in creating complex visual content. In recent years, diffusion-based generative modeling has become a highly effective way for conditional image synthesis, leading to exponential growth in the literature. However, the complexity of diffusion-based modeling, the wide range of image synthesis tasks, and the diversity of conditioning mechanisms present significant challenges for researchers to keep up with rapid developments and to understand the core concepts on this topic. In this survey, we categorize existing works based on how conditions are integrated into the two fundamental components of diffusion-based modeling, i.e., the denoising network and the sampling process. We specifically highlight the underlying principles, advantages, and potential challenges of various conditioning approaches during the training, re-purposing, and specialization stages to construct a desired denoising network. We also summarize six mainstream conditioning mechanisms in the sampling process. All discussions are centered around popular applications. Finally, we pinpoint several critical yet still unsolved problems and suggest some possible solutions for future research.},
+  arxiv={2409.19365},
+  code={https://github.com/zju-pi/Awesome-Conditional-Diffusion-Models},
 }
 
 

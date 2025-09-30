@@ -28,7 +28,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Postdoctoral Associate working with SUNY Distinguished Professor [Siwei Lyu](https://cse.buffalo.edu/~siweilyu/) at the University at Buffalo, State University of New York.
+I am a Postdoctoral Associate working with SUNY Distinguished Professor [Siwei Lyu](https://scholar.google.com/citations?user=wefAEM4AAAAJ) at the University at Buffalo, State University of New York (SUNY).
 
 I received my Ph.D. from [Zhejiang University](https://en.wikipedia.org/wiki/Zhejiang_University) in Jun 2024. My Ph.D. thesis, titled "Knowledge Distillation on Deep Neural Networks" won the _Outstanding Doctoral Dissertation_ award. My Ph.D. advisors were Prof. [Can Wang](https://scholar.google.com/citations?user=C63q3HoAAAAJ) and Prof. [Chun Chen](https://scholar.google.com/citations?user=Co50o54AAAAJ).
 
