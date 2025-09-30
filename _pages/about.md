@@ -30,6 +30,6 @@ latest_posts:
 
 I am a Postdoctoral Associate working with SUNY Distinguished Professor [Siwei Lyu](https://scholar.google.com/citations?user=wefAEM4AAAAJ) at the University at Buffalo, State University of New York (SUNY).
 
-I received my Ph.D. from [Zhejiang University](https://en.wikipedia.org/wiki/Zhejiang_University) in Jun 2024. My Ph.D. thesis, titled "Knowledge Distillation on Deep Neural Networks" won the _Outstanding Doctoral Dissertation_ award. My Ph.D. advisors were Prof. [Can Wang](https://scholar.google.com/citations?user=C63q3HoAAAAJ) and Prof. [Chun Chen](https://scholar.google.com/citations?user=Co50o54AAAAJ).
+I received my Ph.D. from [Zhejiang University](https://en.wikipedia.org/wiki/Zhejiang_University) in Jun 2024. My Ph.D. thesis, titled _Knowledge Distillation on Deep Neural Networks_ won the **Outstanding Doctoral Dissertation** award. My Ph.D. advisors were Prof. [Can Wang](https://scholar.google.com/citations?user=C63q3HoAAAAJ) and Prof. [Chun Chen](https://scholar.google.com/citations?user=Co50o54AAAAJ).
 
 I lived in [Hangzhou](https://en.wikipedia.org/wiki/Hangzhou) and [Wenzhou](https://en.wikipedia.org/wiki/Wenzhou) for more than ten years.
