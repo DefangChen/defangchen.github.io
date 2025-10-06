@@ -25,29 +25,16 @@
           <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
         {% endif %}
       {% endif %}
-      {%- comment -%}
-        Topics (simple): support either `topic={key}` or `topics={k1,k2}` (or a comma-separated `topic`).
-        Render all badges inside a full-width container under the abbr so their width matches the abbr column.
-      {%- endcomment -%}
-      {% assign topic_list = '' %}
-      {% if entry.topics %}
-        {% assign topic_list = entry.topics %}
-      {% elsif entry.topic %}
-        {% assign topic_list = entry.topic %}
-      {% endif %}
-      {% if topic_list and topic_list != '' %}
-        {% assign topic_list = topic_list | replace: ' ', '' | strip %}
-        {% assign topics_array = topic_list | split: ',' %}
-        <div class="paper-topic mt-2">
-          {% for t in topics_array %}
-            {% assign tkey = t | downcase | strip %}
-            {% assign tm = site.data.topics[tkey] %}
-            {% if tm %}
-              <span class="topic-badge" style="background-color: {{ tm.color }};">{{ tm.name }}</span>
-            {% else %}
-              <span class="topic-badge" style="background-color: #6c757d;">{{ t }}</span>
-            {% endif %}
-          {% endfor %}
+      {%- comment -%} Topic: show a single colored badge under the abbr when `topic` is set in the .bib entry {%- endcomment -%}
+      {% if entry.topic %}
+        {% assign tkey = entry.topic | downcase | replace: ' ', '' | strip %}
+        {% assign tm = site.data.topics[tkey] %}
+        <div class="paper-topic mt-2" style="text-align:center;">
+          {% if tm %}
+            <span class="topic-badge" style="background-color: {{ tm.color }};">{{ tm.name }}</span>
+          {% else %}
+            <span class="topic-badge" style="background-color: #6c757d;">{{ entry.topic }}</span>
+          {% endif %}
         </div>
       {% endif %}
       {% if entry.preview %}
