@@ -2,12 +2,13 @@
 /* Show the full publication venue text. Allow wrapping so the entire
    string is visible instead of being truncated with an ellipsis. */
 .periodical {
-  /* Force a single line and do not truncate with ellipsis.
-     This will display the entire venue on one line when screen
-     space is sufficient. */
-  white-space: nowrap;
+  /* Allow the periodical/venue line to wrap naturally so long
+     conference/journal names break across lines on smaller screens. */
+  white-space: normal;
   overflow: visible;
-  text-overflow: clip;
+  /* Help long words break to avoid overflow */
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 /* Simple topic badge styling shown under the abbr (left column) */

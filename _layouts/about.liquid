@@ -60,7 +60,14 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        selected papers
+        <a
+          href="https://scholar.google.com/citations?user=F5P_8NkAAAAJ"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="font-size:0.95rem; margin-left:0.45rem; color: inherit;"
+          >(full)</a
+        >
       </h2>
       <p class="text-muted" style="font-size:0.95rem; margin-top:0.25rem;">† denotes the corresponding author / project leader</p>
       {% include selected_papers.liquid %}
