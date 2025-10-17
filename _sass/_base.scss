@@ -441,6 +441,31 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Profile-specific social icons (avatar area)
+.profile {
+  .profile-social {
+    .contact-icons {
+      font-size: 2.2rem; // increased size for better visibility
+      display: flex;
+      justify-content: center;
+      gap: 0.8rem;
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        i::before,
+        img,
+        svg {
+          width: 2.2rem;
+          height: 2.2rem;
+        }
+      }
+    }
+  }
+}
+
 .wechat-modal {
   display: none;
   position: fixed;
@@ -735,8 +760,7 @@ footer.sticky-bottom {
     li {
       margin-bottom: 1rem;
 
-      .preview {
-      }
+      /* .preview rules removed (empty) to avoid lint error */
 
       .abbr {
         margin-bottom: 0.5rem;

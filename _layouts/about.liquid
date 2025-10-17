@@ -36,6 +36,12 @@ layout: default
         {% if page.profile.more_info and page.profile.show_more_info != false %}
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}
+        <!-- Social icons moved under the avatar -->
+        {% if page.social %}
+          <div class="profile-social mt-3">
+            <div class="contact-icons">{% include social.liquid %}</div>
+          </div>
+        {% endif %}
       </div>
     {% endif %}
 
@@ -73,11 +79,9 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
-    <!-- Social -->
+    <!-- Contact note and last-updated (social icons moved under the avatar) -->
     {% if page.social %}
       <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
         <div class="contact-note">
           {{ site.contact_note }}
           {% comment %}Append automatic build time as last-updated (uses Jekyll build time site.time){% endcomment %}
