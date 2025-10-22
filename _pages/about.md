@@ -34,4 +34,4 @@ I received my Ph.D. from [Zhejiang University](https://en.wikipedia.org/wiki/Zhe
 
 I am working on _diffusion-based generative models_ (theoretical understanding, accelerated sampling), and _knowledge distillation_. I have reviewed over 100 papers for top-tier conferences and journals, including serving in senior roles.
 
-I lived in [Hangzhou (Paradise on Earth)](https://en.wikipedia.org/wiki/Hangzhou#Proverbs) and [Wenzhou (Cradle of Mathematicians)](https://en.wikipedia.org/wiki/Wenzhou#Cradle_of_Mathematicians) for more than 25 years.
+I lived in [Hangzhou](https://en.wikipedia.org/wiki/Hangzhou#Proverbs) (Paradise on Earth) and [Wenzhou](https://en.wikipedia.org/wiki/Wenzhou#Cradle_of_Mathematicians) (Cradle of Mathematicians) for more than 25 years.
