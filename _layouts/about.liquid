@@ -71,7 +71,7 @@ layout: default
           href="https://scholar.google.com/citations?user=F5P_8NkAAAAJ"
           target="_blank"
           rel="noopener noreferrer"
-          style="font-size:0.95rem; margin-left:0.45rem; color: inherit;"
+          style="font-size:1.2rem; margin-left:0.45rem; color: inherit;"
           >(full)</a
         >
       </h2>
@@ -83,7 +83,7 @@ layout: default
     {% if page.social %}
       <div class="social">
         <div class="contact-note">
-          {{ site.contact_note }}
+          {{ site.contact_note | markdownify }}
           {% comment %}Append automatic build time as last-updated (uses Jekyll build time site.time){% endcomment %}
           <div class="last-updated" style="margin-top:0.25rem; font-size:0.9em; color:#555;">
             Last updated: {{ site.time | date: '%Y-%m-%d %H:%M %Z' }}

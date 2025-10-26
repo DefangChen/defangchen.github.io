@@ -7,7 +7,7 @@ first_name: Defang
 middle_name:
 last_name: Chen
 contact_note: >
-# I will occasionally update my homepage.
+  I lived in [Hangzhou](https://en.wikipedia.org/wiki/Hangzhou#Proverbs) (Paradise on Earth) and [Wenzhou](https://en.wikipedia.org/wiki/Wenzhou#Cradle_of_Mathematicians) (Cradle of Mathematicians) for more than 25 years.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
