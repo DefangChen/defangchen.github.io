@@ -10,6 +10,7 @@
 
 @inproceedings{chen2020online,
   abbr={20-AAAI},
+  selected={true},
   topic={Distillation},
   bibtex_show={true},
   title={Online Knowledge Distillation with Diverse Peers},
@@ -120,6 +121,7 @@
 
 @inproceedings{zhou2024simple,
   abbr={24-NeurIPS},
+  selected={true},
   topic={diffusion},
   bibtex_show={true},
   title={Simple and fast distillation of diffusion models},
@@ -132,8 +134,24 @@
   code={https://github.com/zju-pi/diff-sampler},
 }
 
+@inproceedings{sun2025knowledge,
+  abbr={25-ICCV},
+  selected={true},
+  topic={Distillation},
+  bibtex_show={true},
+  title={Knowledge distillation with refined logits},
+  author={Sun, Wujie and Chen†, Defang and Lyu, Siwei and Chen, Genlang and Chen, Chun and Wang, Can},
+  abstract={Recent research on knowledge distillation has increasingly focused on logit distillation because of its simplicity, effectiveness, and versatility in model compression. In this paper, we introduce Refined Logit Distillation (RLD) to address the limitations of current logit distillation methods. Our approach is motivated by the observation that even high-performing teacher models can make incorrect predictions, creating an exacerbated divergence between the standard distillation loss and the cross-entropy loss, which can undermine the consistency of the student model's learning objectives. Previous attempts to use labels to empirically correct teacher predictions may undermine the class correlations. In contrast, our RLD employs labeling information to dynamically refine teacher logits. In this way, our method can effectively eliminate misleading information from the teacher while preserving crucial class correlations, thus enhancing the value and efficiency of distilled knowledge. Experimental results on CIFAR-100 and ImageNet demonstrate its superiority over existing methods.},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={1110--1119},
+  arxiv={2408.07703},
+  code={https://github.com/zju-SWJ/RLD},
+  year={2025}
+}
+
 @article{zhan2025conditional,
   abbr={25-TMLR},
+  selected={true},
   topic={Survey},
   bibtex_show={true},
   title={Conditional Image Synthesis with Diffusion Models: A Survey},
@@ -143,6 +161,20 @@
   abstract={Conditional image synthesis based on user-specified requirements is a key component in creating complex visual content. In recent years, diffusion-based generative modeling has become a highly effective way for conditional image synthesis, leading to exponential growth in the literature. However, the complexity of diffusion-based modeling, the wide range of image synthesis tasks, and the diversity of conditioning mechanisms present significant challenges for researchers to keep up with rapid developments and to understand the core concepts on this topic. In this survey, we categorize existing works based on how conditions are integrated into the two fundamental components of diffusion-based modeling, i.e., the denoising network and the sampling process. We specifically highlight the underlying principles, advantages, and potential challenges of various conditioning approaches during the training, re-purposing, and specialization stages to construct a desired denoising network. We also summarize six mainstream conditioning mechanisms in the sampling process. All discussions are centered around popular applications. Finally, we pinpoint several critical yet still unsolved problems and suggest some possible solutions for future research.},
   arxiv={2409.19365},
   code={https://github.com/zju-pi/Awesome-Conditional-Diffusion-Models},
+}
+
+
+@article{zhou2025dice,
+  abbr={Preprint},
+  selected={true},
+  topic={Diffusion},
+  bibtex_show={true},
+  title={DICE: Distilling Classifier-Free Guidance into Text Embeddings},
+  author={Zhou, Zhenyu and Chen†, Defang and Wang, Can and Chen, Chun and Lyu, Siwei},
+  journal={arXiv preprint arXiv:2502.03726},
+  arxiv={2502.03726},
+  abstract={Text-to-image diffusion models are capable of generating high-quality images, but these images often fail to align closely with the given text prompts. Classifier-free guidance (CFG) is a popular and effective technique for improving text-image alignment in the generative process. However, using CFG introduces significant computational overhead and deviates from the established theoretical foundations of diffusion models. In this paper, we present DIstilling CFG by enhancing text Embeddings (DICE), a novel approach that removes the reliance on CFG in the generative process while maintaining the benefits it provides. DICE distills a CFG-based text-to-image diffusion model into a CFG-free version by refining text embeddings to replicate CFG-based directions. In this way, we avoid the computational and theoretical drawbacks of CFG, enabling high-quality, well-aligned image generation at a fast sampling speed. Extensive experiments on multiple Stable Diffusion v1.5 variants, SDXL and PixArt-\alpha demonstrate the effectiveness of our method. Furthermore, DICE supports negative prompts for image editing to improve image quality further.},
+  year={2025}
 }
 
 
