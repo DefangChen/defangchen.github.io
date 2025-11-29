@@ -17,6 +17,11 @@ profile:
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
+miscellanea: |
+  Recommended Online Courses related to my research interests: 
+  (1) [Differential Equations and Dynamical Systems, Steve Brunton](https://www.youtube.com/watch?v=9fQkLQZe3u8&list=PLMrJAkhIeNNTYaOnVI3QpH7jgULnAmvPA), 
+  (2) [Principles of Deep Representation Learning, Yi Ma](https://www.youtube.com/@HKUdata8014) ...
+
 announcements:
   enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
@@ -28,8 +33,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Postdoctoral Associate working with SUNY Distinguished Professor [Siwei Lyu](https://scholar.google.com/citations?user=wefAEM4AAAAJ) (IEEE/IAPR Fellow) at the University at Buffalo, State University of New York (SUNY).
+I am a Postdoctoral Associate working with SUNY Distinguished Professor [Siwei Lyu](https://scholar.google.com/citations?user=wefAEM4AAAAJ) (IEEE/IAPR Fellow) at the University at Buffalo, State University of New York (SUNY). I received my Ph.D. from [Zhejiang University](https://en.wikipedia.org/wiki/Zhejiang_University) in Jun 2024. My Ph.D. thesis, titled _Knowledge Distillation on Deep Neural Networks_ won the **Outstanding Doctoral Dissertation** award. My Google Scholar citations reached 2025 in 2025.
 
-I received my Ph.D. from [Zhejiang University](https://en.wikipedia.org/wiki/Zhejiang_University) in Jun 2024. My Ph.D. thesis, titled _Knowledge Distillation on Deep Neural Networks_ won the **Outstanding Doctoral Dissertation** award. My Ph.D. advisors were Prof. [Can Wang](https://scholar.google.com/citations?user=C63q3HoAAAAJ) and Prof. [Chun Chen](https://scholar.google.com/citations?user=Co50o54AAAAJ).
+<!-- My Ph.D. advisors were Prof. [Can Wang](https://scholar.google.com/citations?user=C63q3HoAAAAJ) and Prof. [Chun Chen](https://scholar.google.com/citations?user=Co50o54AAAAJ). -->
 
-I am working on _diffusion-based generative models_ (theoretical understanding, accelerated sampling), and _knowledge distillation_. My Google Scholar citations reached 2025 in 2025. I have reviewed over 100 papers for top-tier conferences and journals, including serving in senior roles.
+I am working on _diffusion-based generative models_ (theoretical understanding, accelerated sampling), and _knowledge distillation_. I have reviewed over 100 papers for top-tier conferences and journals, including serving in senior roles. I lived in [Hangzhou](https://en.wikipedia.org/wiki/Hangzhou#Proverbs) (Paradise on Earth) and [Wenzhou](https://en.wikipedia.org/wiki/Wenzhou#Cradle_of_Mathematicians) (Cradle of Mathematicians) for more than 25 years.
