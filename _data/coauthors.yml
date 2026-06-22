@@ -2,20 +2,26 @@
   - firstname: ["Defang", "D.", "D. Chen", "Defang Chen"]
     url: https://scholar.google.com/citations?user=F5P_8NkAAAAJ
 
+"wang":
+  - firstname: ["Can", "C. Wang", "Can Wang"]
+    url: https://scholar.google.com/citations?user=C63q3HoAAAAJ&hl=en
+
 "lyu":
   - firstname: ["Siwei", "Siwei Lyu"]
     url: https://scholar.google.com/citations?user=wefAEM4AAAAJ
+
+"shen":
+  - firstname: ["Chunhua", "Chunhua Shen"]
+    url: https://scholar.google.com/citations?user=Ljk2BvIAAAAJ
 
 "zhou":
   - firstname: ["Zhenyu", "Zhenyu Zhou"]
     url: https://scholar.google.com/citations?user=PR0YPk4AAAAJ
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"zhan":
+  - firstname: ["Zheyuan", "Zheyuan Zhan"]
+    url: https://scholar.google.com/citations?user=odJ72gIAAAAJ&hl=en
 
-"shen":
-  - firstname: ["Chunhua", "Chunhua Shen"]
-    url: https://scholar.google.com/citations?user=Ljk2BvIAAAAJ
 
 "schrodinger":
   - firstname: ["Erwin"]
