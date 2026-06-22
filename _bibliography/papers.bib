@@ -171,7 +171,7 @@
   arxiv={2502.03726},
   code={https://github.com/zju-pi/dice},
   abstract={Text-to-image diffusion models are capable of generating high-quality images, but these images often fail to align closely with the given text prompts. Classifier-free guidance (CFG) is a popular and effective technique for improving text-image alignment in the generative process. However, using CFG introduces significant computational overhead and deviates from the established theoretical foundations of diffusion models. In this paper, we present DIstilling CFG by enhancing text Embeddings (DICE), a novel approach that removes the reliance on CFG in the generative process while maintaining the benefits it provides. DICE distills a CFG-based text-to-image diffusion model into a CFG-free version by refining text embeddings to replicate CFG-based directions. In this way, we avoid the computational and theoretical drawbacks of CFG, enabling high-quality, well-aligned image generation at a fast sampling speed. Extensive experiments on multiple Stable Diffusion v1.5 variants, SDXL and PixArt-\alpha demonstrate the effectiveness of our method. Furthermore, DICE supports negative prompts for image editing to improve image quality further.},
-  additional_info={*<span style="color:#ff6c0c">Oral, less than 5%</span>*},
+  additional_info={*<span style="color:#ff6c0c">Oral, 4.7%</span>*},
   year={2025}
 }
 
@@ -197,13 +197,27 @@
   topic={Diffusion},
   bibtex_show={true},
   title={Analyzing and Improving Fast Sampling of Text-to-Image Diffusion Models},
-  author={Zhou, Zhenyu and Chen†, Defang and Wang, Can and Chen, Chun and Lyu, Siwei},
+  author={Zhou, Zhenyu and Chen†, Defang and Lyu, Siwei and Chen, Chun and Wang, Can},
   booktitle=eccv,
   arxiv={2603.00763},
   code={https://github.com/zju-pi/TORS},
   abstract={Text-to-image diffusion models have achieved unprecedented success but still struggle to produce high-quality results under limited sampling budgets. Existing training-free sampling acceleration methods are typically developed independently, leaving the overall performance and compatibility among these methods unexplored. In this paper, we bridge this gap by systematically elucidating the design space, and our comprehensive experiments identify the sampling time schedule as the most pivotal factor. Inspired by the geometric properties of diffusion models revealed through the Frenet-Serret formulas, we propose constant total rotation schedule (TORS), a scheduling strategy that ensures uniform geometric variation along the sampling trajectory. TORS outperforms previous training-free acceleration methods and produces high-quality images with 10 sampling steps on Flux.1-Dev and Stable Diffusion 3.5. Extensive experiments underscore the adaptability of our method to unseen models, hyperparameters, and downstream applications.},
   year={2026}
 }
+
+
+@article{xu2025detection,
+  abbr={arXiv},
+  selected={true},
+  topic={Survey},
+  bibtex_show={true},
+  title={Fully AI-Generated Image Detection: Definition, Recent Advances and Challenges},
+  author={Xu, Qijie and Wang, Can and Chen, Jiawei and Lyu, Siwei and Chen, Defang},
+  journal=arXiv,
+  year={2025},
+  arxiv={2502.19716},
+}
+
 @comment{
 @article{PhysRev.47.777,
   abbr={PhysRev},
