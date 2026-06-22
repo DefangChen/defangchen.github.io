@@ -33,7 +33,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Postdoctoral Scholar at the [University of California, Berkeley](https://www.berkeley.edu/). I received my Ph.D. from [Zhejiang University](https://en.wikipedia.org/wiki/Zhejiang_University), and my thesis, titled _Knowledge Distillation on Deep Neural Networks_, won the Outstanding Doctoral Dissertation award (2%). I worked with SUNY Distinguished Professor [Siwei Lyu](https://scholar.google.com/citations?user=wefAEM4AAAAJ) at the State University of New York at Buffalo. 
+I am a Postdoctoral Scholar at the [University of California, Berkeley](https://www.berkeley.edu/). I received my Ph.D. from [Zhejiang University](https://en.wikipedia.org/wiki/Zhejiang_University), and my thesis, titled _Knowledge Distillation on Deep Neural Networks_, won the Outstanding Doctoral Dissertation award (2%). I worked with SUNY Distinguished Professor [Siwei Lyu](https://scholar.google.com/citations?user=wefAEM4AAAAJ) at the State University of New York at Buffalo.
 
 <!-- My Ph.D. advisors were Prof. [Can Wang](https://scholar.google.com/citations?user=C63q3HoAAAAJ) and Prof. [Chun Chen](https://scholar.google.com/citations?user=Co50o54AAAAJ). I have reviewed over 100 papers for top-tier conferences and journals, including serving in senior roles.  -->
 
