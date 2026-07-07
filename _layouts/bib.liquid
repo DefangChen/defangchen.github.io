@@ -168,7 +168,7 @@
     {% elsif proceedings contains entry.type %}
       {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
     {% elsif thesis contains entry.type %}
-      {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
+      {%- capture entrytype -%}<em>{{ entry.school | markdownify | remove: '<p>' | remove: '</p>' }}</em>{%- endcapture -%}
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}
@@ -181,6 +181,9 @@
     {% if entry.location %}
       {% capture entrytype %}{{ entrytype }}{{ ", " }}{{ entry.location }}{% endcapture %}
     {% endif -%}
+    {% if thesis contains entry.type %}
+      {% assign entryyear = '' %}
+    {% endif %}
     {% comment %}Render additional_info on its own line after the year rather than inline with the proceedings/journal{% endcomment %}
     {% capture hook_exists %}{% file_exists _includes/hook/bib.liquid %}{% endcapture %}
     {% if hook_exists == 'true' %}

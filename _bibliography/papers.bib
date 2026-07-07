@@ -95,8 +95,22 @@
   year={2024},
   selected={true},
   abstract={Sampling from diffusion models can be treated as solving the corresponding ordinary differential equations (ODEs), with the aim of obtaining an accurate solution with as few number of function evaluations (NFE) as possible. Recently, various fast samplers utilizing higher-order ODE solvers have emerged and achieved better performance than the initial first-order one. However, these numerical methods inherently result in certain approximation errors, which significantly degrades sample quality with extremely small NFE (e.g., around 5). In contrast, based on the geometric observation that each sampling trajectory almost lies in a two-dimensional subspace embedded in the ambient space, we propose Approximate MEan-Direction Solver (AMED-Solver) that eliminates truncation errors by directly learning the mean direction for fast diffusion sampling. Besides, our method can be easily used as a plugin to further improve existing ODE-based samplers. Extensive experiments on image synthesis with the resolution ranging from 32 to 512 demonstrate the effectiveness of our method. With only 5 NFE, we achieve 6.61 FID on CIFAR-10, 10.74 FID on ImageNet 64\times64, and 13.20 FID on LSUN Bedroom.},
-  additional_info={*<span style="color:#ff6c0c">Highlight, 2.8%</span>*},
+  additional_info={<span style="color:#ff6c0c">Highlight, 2.8%</span>},
   arxiv={2312.00094},
+  code={https://github.com/zju-pi/diff-sampler},
+}
+
+@article{chen2023geometric,
+  abbr={arXiv},
+  selected={true},
+  topic={Diffusion},
+  bibtex_show={true},
+  title={A Geometric Perspective on Diffusion Models},
+  author={Chen, Defang and Zhou, Zhenyu and Mei, Jian-Ping and Shen, Chunhua and Chen, Chun and Wang, Can},
+  journal={arXiv preprint arXiv:2305.19947},
+  year={2023},
+  arxiv={2305.19947},
+  abstract={Recent years have witnessed significant progress in developing effective training and fast sampling techniques for diffusion models. A remarkable advancement is the use of stochastic differential equations (SDEs) and their marginal-preserving ordinary differential equations (ODEs) to describe data perturbation and generative modeling in a unified framework. In this paper, we carefully inspect the ODE-based sampling of a popular variance-exploding SDE and reveal several intriguing structures of its sampling dynamics. We discover that the data distribution and the noise distribution are smoothly connected with a quasi-linear sampling trajectory and another implicit denoising trajectory that even converges faster. Meanwhile, the denoising trajectory governs the curvature of the corresponding sampling trajectory and its finite differences yield various second-order samplers used in practice. Furthermore, we establish a theoretical relationship between the optimal ODE-based sampling and the classic mean-shift (mode-seeking) algorithm, with which we can characterize the asymptotic behavior of diffusion models and identify the empirical score deviation.},
   code={https://github.com/zju-pi/diff-sampler},
 }
 
@@ -111,10 +125,19 @@
   year={2024},
   selected={true},
   abstract={Diffusion-based generative models use stochastic differential equations (SDEs) and their equivalent ordinary differential equations (ODEs) to establish a smooth connection between a complex data distribution and a tractable prior distribution. In this paper, we identify several intriguing trajectory properties in the ODE-based sampling process of diffusion models. We characterize an implicit denoising trajectory and discuss its vital role in forming the coupled sampling trajectory with a strong shape regularity, regardless of the generated content. We also describe a dynamic programming-based scheme to make the time schedule in sampling better fit the underlying trajectory structure. This simple strategy requires minimal modification to any given ODE-based numerical solvers and incurs negligible computational cost, while delivering superior performance in image generation, especially in 5\sim 10 function evaluations. },
-  additional_info={*<span style="color:#ff6c0c">Early version:</span> [A Geometric Perspective on Diffusion Models (arXiv:2305.19947)](https://arxiv.org/abs/2305.19947)*},
   Xgoogle_scholar_id={Ak0FvsSvgGUC},
   arxiv={2405.11326},
   code={https://github.com/zju-pi/diff-sampler},
+}
+
+@phdthesis{thesis,
+  abbr={Ph.D. Thesis},
+  selected={true},
+  title={Knowledge Distillation on Deep Neural Networks},
+  author={Chen, Defang},
+  year={2024},
+  additional_info={[SimKD, CVPR'22](/publications/#chen2022simkd), [SemCKD, AAAI'21, TKDE'23](/publications/#chen2021cross), [OnlineKD, AAAI'20](/publications/#chen2020online)},
+  school={[Zhejiang University](https://en.wikipedia.org/wiki/Zhejiang_University), Outstanding Doctoral Dissertation award (Top 2%)}
 }
 
 @inproceedings{zhou2024simple,
@@ -171,7 +194,7 @@
   arxiv={2502.03726},
   code={https://github.com/zju-pi/dice},
   abstract={Text-to-image diffusion models are capable of generating high-quality images, but these images often fail to align closely with the given text prompts. Classifier-free guidance (CFG) is a popular and effective technique for improving text-image alignment in the generative process. However, using CFG introduces significant computational overhead and deviates from the established theoretical foundations of diffusion models. In this paper, we present DIstilling CFG by enhancing text Embeddings (DICE), a novel approach that removes the reliance on CFG in the generative process while maintaining the benefits it provides. DICE distills a CFG-based text-to-image diffusion model into a CFG-free version by refining text embeddings to replicate CFG-based directions. In this way, we avoid the computational and theoretical drawbacks of CFG, enabling high-quality, well-aligned image generation at a fast sampling speed. Extensive experiments on multiple Stable Diffusion v1.5 variants, SDXL and PixArt-\alpha demonstrate the effectiveness of our method. Furthermore, DICE supports negative prompts for image editing to improve image quality further.},
-  additional_info={*<span style="color:#ff6c0c">Oral, 4.7%</span>*},
+  additional_info={<span style="color:#ff6c0c">Oral, 4.7%</span>},
   year={2025}
 }
 
