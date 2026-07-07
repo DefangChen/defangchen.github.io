@@ -44,7 +44,9 @@
   padding: 0.45rem 0.7rem;
   border-radius: 0.4rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-  transition: opacity 0.15s ease, visibility 0.15s ease;
+  transition:
+    opacity 0.15s ease,
+    visibility 0.15s ease;
   pointer-events: none;
 }
 
