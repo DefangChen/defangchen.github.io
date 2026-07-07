@@ -33,9 +33,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Postdoctoral Scholar at the [University of California, Berkeley](https://www.berkeley.edu/). 
+I am a Postdoctoral Scholar at the [University of California, Berkeley](https://www.berkeley.edu/).
 
 <!-- My Ph.D. advisors were Prof. [Can Wang](https://scholar.google.com/citations?user=C63q3HoAAAAJ) and Prof. [Chun Chen](https://scholar.google.com/citations?user=Co50o54AAAAJ). I have reviewed over 100 papers for top-tier conferences and journals, including serving in senior roles.  -->
 
 My research focuses on _diffusion-based generative models_ (theoretical understanding, accelerated sampling), and _knowledge distillation_. My Google Scholar citations reached 2025 in 2025. I lived in <span class="hover-tooltip">[Hangzhou](https://en.wikipedia.org/wiki/Hangzhou#Proverbs)<span class="hover-tooltip__text">Paradise on Earth</span></span> and <span class="hover-tooltip">[Wenzhou](https://en.wikipedia.org/wiki/Wenzhou#Mathematics)<span class="hover-tooltip__text">Home of Mathematicians</span></span> for more than 25 years. I have been fortunate to work with SUNY Distinguished Professor [Siwei Lyu](https://scholar.google.com/citations?user=wefAEM4AAAAJ) at the State University of New York at Buffalo.
-
