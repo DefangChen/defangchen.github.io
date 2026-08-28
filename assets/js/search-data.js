@@ -438,7 +438,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%64%65%66%61%6E%67%63%68@%62%75%66%66%61%6C%6F.%65%64%75", "_blank");
+          window.open("mailto:%64%65%66%63%68%65%72%6E@%62%65%72%6B%65%6C%65%79.%65%64%75", "_blank");
         },
       },{
         id: 'social-github',
@@ -446,13 +446,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://github.com/DefangChen", "_blank");
-        },
-      },{
-        id: 'social-linkedin',
-        title: 'LinkedIn',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.linkedin.com/in/defang-chen-805b34165", "_blank");
         },
       },{
         id: 'social-researchgate',
