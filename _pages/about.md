@@ -6,7 +6,8 @@ permalink: /
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: Avatar.jpg
+  caption: Honolulu, August 2026
   image_circular: false # crops the image to make it circular
   show_more_info: false
   more_info: >
@@ -33,7 +34,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Postdoctoral Scholar at the [University of California, Berkeley](https://www.berkeley.edu/), affiliated with [BAIR](https://bair.berkeley.edu/).
+I am a Postdoctoral Scholar at the [University of California, Berkeley](https://www.berkeley.edu/), affiliated with [Biostatistics Division](https://publichealth.berkeley.edu/academics/biostatistics) and [BAIR](https://bair.berkeley.edu/).
 
 <!-- My Ph.D. advisors were Prof. [Can Wang](https://scholar.google.com/citations?user=C63q3HoAAAAJ) and Prof. [Chun Chen](https://scholar.google.com/citations?user=Co50o54AAAAJ). I have reviewed over 100 papers for top-tier conferences and journals, including serving in senior roles.  -->
 
