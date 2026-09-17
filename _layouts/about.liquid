@@ -79,6 +79,14 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    {% if page.permalink == '/' %}
+      <hr style="width: 50%; border: 0; border-top: 1px dotted #9ca3af;">
+      <p>
+        A historical note: about a century ago, <a href="https://en.wikipedia.org/wiki/Jiang_Lifu">Lifu Jiang</a> (B.S. from UC Berkeley, 1915) was
+        born in a neighborhood near where I grew up.
+      </p>
+    {% endif %}
+
     <!-- Misc. section -->
     {% if page.miscellanea %}
       <h2>Misc.</h2>
