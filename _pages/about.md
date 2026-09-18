@@ -18,6 +18,10 @@ profile:
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
+# rendered at the foot of the page, just above the historical note
+closing_note: >
+  My Google Scholar citation count reached 2025 in 2025. I lived in <span class="hover-tooltip">[Hangzhou](https://en.wikipedia.org/wiki/Hangzhou#Proverbs)<span class="hover-tooltip__text">Paradise on Earth</span></span> and <span class="hover-tooltip">[Wenzhou](https://en.wikipedia.org/wiki/Wenzhou#Mathematics)<span class="hover-tooltip__text">Home of Mathematicians</span></span> for more than 25 years.
+
 # miscellanea: |
 #   Recommended Online Courses related to my research interests:
 #   (1) [Differential Equations and Dynamical Systems, Steve Brunton](https://www.youtube.com/watch?v=9fQkLQZe3u8&list=PLMrJAkhIeNNTYaOnVI3QpH7jgULnAmvPA),
@@ -34,8 +38,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Postdoctoral Scholar at the [University of California, Berkeley](https://www.berkeley.edu/), affiliated with [Biostatistics Division](https://publichealth.berkeley.edu/academics/biostatistics) under Prof. [Jingshen Wang](https://sites.google.com/berkeley.edu/jingshenwang/home?authuser=0) and [BAIR](https://bair.berkeley.edu/). I received my Ph.D. from [Zhejiang University](https://en.wikipedia.org/wiki/Zhejiang_University) with the outstanding doctoral dissertation award, _Knowledge Distillation on Deep Neural Networks_. I have been fortunate to work closely with Profs. [Siwei Lyu](https://scholar.google.com/citations?user=wefAEM4AAAAJ), [Can Wang](https://scholar.google.com/citations?user=C63q3HoAAAAJ&hl=en), and [Jian-Ping Mei](https://scholar.google.com/citations?user=GxMZygQAAAAJ&hl=en).
-My Google Scholar citation count reached 2025 in 2025. I lived in <span class="hover-tooltip">[Hangzhou](https://en.wikipedia.org/wiki/Hangzhou#Proverbs)<span class="hover-tooltip__text">Paradise on Earth</span></span> and <span class="hover-tooltip">[Wenzhou](https://en.wikipedia.org/wiki/Wenzhou#Mathematics)<span class="hover-tooltip__text">Home of Mathematicians</span></span> for more than 25 years.
+I am a Postdoctoral Scholar at the [University of California, Berkeley](https://www.berkeley.edu/), affiliated with [Biostatistics Division](https://publichealth.berkeley.edu/academics/biostatistics) under Prof. [Jingshen Wang](https://sites.google.com/berkeley.edu/jingshenwang/home?authuser=0) and [BAIR](https://bair.berkeley.edu/). I received my Ph.D. (_Knowledge Distillation on Deep Neural Networks_) from [Zhejiang University](https://en.wikipedia.org/wiki/Zhejiang_University) with the Outstanding Doctoral Dissertation Award.
+I have been fortunate to work closely with Profs. [Siwei Lyu](https://scholar.google.com/citations?user=wefAEM4AAAAJ), [Can Wang](https://scholar.google.com/citations?user=C63q3HoAAAAJ&hl=en), and [Jian-Ping Mei](https://scholar.google.com/citations?user=GxMZygQAAAAJ&hl=en).
 
 <!-- My Ph.D. advisors were Prof. [Can Wang](https://scholar.google.com/citations?user=C63q3HoAAAAJ) and Prof. [Chun Chen](https://scholar.google.com/citations?user=Co50o54AAAAJ). I have reviewed over 100 papers for top-tier conferences and journals, including serving in senior roles.  -->
 

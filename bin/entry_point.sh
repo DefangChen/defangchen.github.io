@@ -3,6 +3,9 @@ set -euo pipefail
 
 echo "Entry point script running"
 
+export BUNDLE_PATH="${BUNDLE_PATH:-$HOME/.bundle}"
+export BUNDLE_APP_CONFIG="${BUNDLE_APP_CONFIG:-$HOME/.bundle-config}"
+
 CONFIG_FILE=_config.yml
 
 # Function to manage Gemfile.lock
@@ -21,6 +24,7 @@ manage_gemfile_lock() {
 
 start_jekyll() {
     manage_gemfile_lock
+    bundle check >/dev/null 2>&1 || bundle install
     bundle exec jekyll serve --watch --port=8080 --host=0.0.0.0 --livereload --verbose --trace --force_polling &
 }
 

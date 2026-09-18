@@ -245,13 +245,74 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+.closing-divider {
+  width: 50%;
+  margin-left: 0;
+  border: 0;
+  border-top: 1px dotted #9ca3af;
+}
+
+.closing-notes {
+  text-align: left;
+}
+
 // Navbar customization
 
 .navbar {
   box-shadow: none;
-  border-bottom: 1px solid var(--global-divider-color);
+  border-bottom: 2px solid #{$california-gold};
   background-color: var(--global-bg-color);
   opacity: 0.95;
+}
+
+.navbar-badge {
+  // Pinned to the viewport corner rather than the centered container, so it
+  // does not share a left edge with the site title.
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0;
+  line-height: 1;
+
+  img {
+    height: 42px;
+    width: auto;
+    display: block;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.08);
+  }
+
+  .navbar-badge-text {
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    color: var(--berkeley-gold);
+    transition: color 0.2s ease;
+  }
+
+  &:hover .navbar-badge-text {
+    color: var(--berkeley-blue);
+  }
+
+  // Once the container reaches the viewport edge there is no corner to pin to,
+  // so the badge rejoins the flow and the seal alone carries the affiliation.
+  @media (max-width: 900px) {
+    position: static;
+    transform: none;
+    margin-right: 0.75rem;
+
+    .navbar-badge-text {
+      display: none;
+    }
+  }
 }
 
 .navbar .dropdown-menu {
@@ -771,12 +832,12 @@ footer.sticky-bottom {
 
         abbr {
           display: inline-block;
-          background-color: var(--global-theme-color);
+          background-color: var(--berkeley-badge-bg);
           margin-bottom: 0.5rem;
-          color: var(--global-card-bg-color) !important;
+          color: var(--berkeley-badge-text) !important;
 
           a {
-            color: white;
+            color: var(--berkeley-badge-text);
 
             &:hover {
               text-decoration: none;

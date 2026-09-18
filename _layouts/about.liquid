@@ -80,11 +80,16 @@ layout: default
     {% endif %}
 
     {% if page.permalink == '/' %}
-      <hr style="width: 50%; border: 0; border-top: 1px dotted #9ca3af;">
-      <p>
-        A historical note: about a century ago, <a href="https://en.wikipedia.org/wiki/Jiang_Lifu">Lifu Jiang</a> (B.S. from UC Berkeley, 1915) was
-        born in a neighborhood near where I grew up.
-      </p>
+      <hr class="closing-divider">
+      <div class="closing-notes">
+        {% if page.closing_note %}
+          {{ page.closing_note | markdownify }}
+        {% endif %}
+        <p>
+          A historical note: about a century ago, <a href="https://en.wikipedia.org/wiki/Jiang_Lifu">Lifu Jiang</a> (B.S. from UC Berkeley, 1915) was
+          born in a neighborhood near where I grew up.
+        </p>
+      </div>
     {% endif %}
 
     <!-- Misc. section -->
