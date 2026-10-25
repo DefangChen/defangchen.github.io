@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+# Compress PDFs in place so AI agents can fetch them (their fetch tools often reject files over 10 MB).
+# Originals are moved to _pdf_originals/ (gitignored, never published). See CLAUDE.md.
+# Usage: bin/compress-pdf assets/pdf/FILE.pdf [...]
+set -euo pipefail
+
+LIMIT=10000000 # bytes
+ORIG_DIR="${PDF_ORIGINALS_DIR:-$(cd "$(dirname "$0")/.." && pwd)/_pdf_originals}"
+
+for cmd in gs pdfinfo pdftotext; do
+  command -v "$cmd" >/dev/null || { echo "missing $cmd (brew install ghostscript poppler)" >&2; exit 1; }
+done
+[ $# -gt 0 ] || { echo "usage: bin/compress-pdf FILE.pdf [...]" >&2; exit 1; }
+
+size() { stat -f%z "$1" 2>/dev/null || stat -c%s "$1"; }
+pages() { pdfinfo "$1" | awk '/^Pages:/{print $2}'; }
+words() { pdftotext -q "$1" - | wc -w | tr -d ' '; }
+
+for pdf in "$@"; do
+  if [ "$(size "$pdf")" -le "$LIMIT" ]; then
+    echo "$pdf: already under 10 MB, skipped"
+    continue
+  fi
+
+  # Highest resolution that fits; plot labels start to blur at 150 dpi.
+  tmp="$(mktemp "${TMPDIR:-/tmp}/compress-pdf.XXXXXX")"
+  dpi_used=""
+  for dpi in 300 220 200 150; do
+    gs -q -dNOPAUSE -dBATCH -dSAFER -sDEVICE=pdfwrite -dPDFSETTINGS=/printer -dCompatibilityLevel=1.6 \
+      -dColorImageResolution=$dpi -dGrayImageResolution=$dpi -sOutputFile="$tmp" "$pdf"
+    if [ "$(size "$tmp")" -le "$LIMIT" ]; then dpi_used=$dpi; break; fi
+  done
+  if [ -z "$dpi_used" ]; then
+    echo "$pdf: still over 10 MB at 150 dpi, left unchanged" >&2; rm -f "$tmp"; continue
+  fi
+
+  # Refuse the result if pages went missing or more than 1% of the text changed.
+  wo=$(words "$pdf"); wn=$(words "$tmp"); diff=$(( wo > wn ? wo - wn : wn - wo ))
+  if [ "$(pages "$pdf")" != "$(pages "$tmp")" ] || [ $(( diff * 100 )) -gt "$wo" ]; then
+    echo "$pdf: compressed copy lost pages or text, left unchanged" >&2; rm -f "$tmp"; continue
+  fi
+
+  mkdir -p "$ORIG_DIR"
+  backup="$ORIG_DIR/$(basename "$pdf")"
+  [ -e "$backup" ] && backup="${backup%.pdf}.$(date +%Y%m%d%H%M%S).pdf"
+  before=$(du -h "$pdf" | cut -f1)
+  mv "$pdf" "$backup"
+  mv "$tmp" "$pdf"
+  chmod 644 "$pdf"
+  echo "$pdf: $before -> $(du -h "$pdf" | cut -f1) at $dpi_used dpi (original: $backup)"
+done
