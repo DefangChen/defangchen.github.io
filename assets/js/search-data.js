@@ -9,12 +9,12 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-learning",
-          title: "learning",
+  },{id: "nav-learnbeyond",
+          title: "LearnBeyond",
           description: "Let there be light",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/learning/";
+            window.location.href = "/learn/";
           },
         },{id: "post-a-post-with-plotly-js",
         
