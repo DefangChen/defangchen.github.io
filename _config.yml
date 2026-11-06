@@ -317,6 +317,7 @@ filtered_bibtex_keywords:
     bibtex_show,
     blog,
     code,
+    draft,
     google_scholar_id,
     xgoogle_scholar_id,
     Xgoogle_scholar_id,

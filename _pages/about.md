@@ -20,7 +20,7 @@ social: true # includes social icons at the bottom of the page
 
 # rendered at the foot of the page, just above the historical note
 closing_note: >
-  My Google Scholar citation count reached 2025 in 2025. I lived in <span class="hover-tooltip">[Hangzhou](https://en.wikipedia.org/wiki/Hangzhou#Proverbs)<span class="hover-tooltip__text">Paradise on Earth</span></span> and <span class="hover-tooltip">[Wenzhou](https://en.wikipedia.org/wiki/Wenzhou#Mathematics)<span class="hover-tooltip__text">Home of Mathematicians</span></span> for more than 25 years.
+  My Google Scholar citation count reached 2025 in 2025. I'm [Gen Z](https://en.wikipedia.org/wiki/Generation_Z) and lived in <span class="hover-tooltip">[Hangzhou](https://en.wikipedia.org/wiki/Hangzhou#Proverbs)<span class="hover-tooltip__text">Paradise on Earth</span></span> and <span class="hover-tooltip">[Wenzhou](https://en.wikipedia.org/wiki/Wenzhou#Mathematics)<span class="hover-tooltip__text">Home of Mathematicians</span></span> for more than 25 years.
 
 # miscellanea: |
 #   Recommended Online Courses related to my research interests:
@@ -38,8 +38,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Postdoctoral Scholar at the [University of California, Berkeley](https://en.wikipedia.org/wiki/University_of_California,_Berkeley), affiliated with [Biostatistics Division](https://publichealth.berkeley.edu/academics/biostatistics) under Prof. [Jingshen Wang](https://jswangberkeley.github.io/) and [BAIR](https://bair.berkeley.edu/). I received my Ph.D. in Computer Science from [Zhejiang University](https://en.wikipedia.org/wiki/Zhejiang_University) with the Outstanding Doctoral Dissertation Award (_Knowledge Distillation on Deep Neural Networks_). I'm listed among the World's Top 2% Scientists (Stanford/Elsevier).
+I am a Postdoctoral Scholar at [UC Berkeley](https://en.wikipedia.org/wiki/University_of_California,_Berkeley), working with Profs. [Jingshen Wang](https://jswangberkeley.github.io/) and [Zeyu Zheng](https://zheng80.github.io/), and affiliated with [Biostatistics](https://publichealth.berkeley.edu/academics/biostatistics) and [BAIR](https://bair.berkeley.edu/). I received my Ph.D. in Computer Science from [Zhejiang University](https://en.wikipedia.org/wiki/Zhejiang_University) with the Outstanding Doctoral Dissertation Award (_Knowledge Distillation on Deep Neural Networks_). I'm listed among the World's Top 2% Scientists (Stanford/Elsevier).
 
-My research focuses on _diffusion-based generative models_ (theoretical understanding and accelerated sampling) and _knowledge distillation_. I have been fortunate to work closely with Profs. [Siwei Lyu](https://scholar.google.com/citations?user=wefAEM4AAAAJ), [Can Wang](https://scholar.google.com/citations?user=C63q3HoAAAAJ&hl=en), and [Jian-Ping Mei](https://scholar.google.com/citations?user=GxMZygQAAAAJ&hl=en) on these topics. My broader interests span applied mathematics, physics, statistics, and neuroscience, and I am open to long-term collaborations.
+My research focuses on _diffusion-based generative models_ (theoretical understanding and accelerated sampling) and _knowledge distillation_. I have been fortunate to work with Profs. [Siwei Lyu](https://scholar.google.com/citations?user=wefAEM4AAAAJ), [Can Wang](https://scholar.google.com/citations?user=C63q3HoAAAAJ&hl=en), and [Jian-Ping Mei](https://scholar.google.com/citations?user=GxMZygQAAAAJ&hl=en) on these topics. My broader interests span applied mathematics, physics, statistics, and neuroscience, and I am open to long-term collaborations.
 
 <!-- My Ph.D. advisors were Prof. [Can Wang](https://scholar.google.com/citations?user=C63q3HoAAAAJ) and Prof. [Chun Chen](https://scholar.google.com/citations?user=Co50o54AAAAJ). I have reviewed over 100 papers for top-tier conferences and journals, including serving in senior roles.  -->
+
+**Prospective Cal undergraduates:** Due to the high volume of inquiries, I may only consider students who understand at least one of my previous works.

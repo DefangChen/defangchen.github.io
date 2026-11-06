@@ -6,6 +6,10 @@
   - firstname: ["Can", "C. Wang", "Can Wang"]
     url: https://scholar.google.com/citations?user=C63q3HoAAAAJ&hl=en
 
+"zheng":
+  - firstname: ["Zeyu", "Z. Zheng", "Zeyu Zheng"]
+    url: https://zheng80.github.io/
+
 "lyu":
   - firstname: ["Siwei", "Siwei Lyu"]
     url: https://scholar.google.com/citations?user=wefAEM4AAAAJ

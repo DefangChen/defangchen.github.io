@@ -270,6 +270,13 @@
       {% if entry.code %}
         <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
       {% endif %}
+      {% if entry.draft %}
+        {% if entry.draft contains '://' %}
+          <a href="{{ entry.draft }}" class="btn btn-sm z-depth-0" role="button">Draft</a>
+        {% else %}
+          <a href="{{ entry.draft | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Draft</a>
+        {% endif %}
+      {% endif %}
       {% if entry.journal_url %}
         <a href="{{ entry.journal_url }}" class="btn btn-sm z-depth-0" role="button">Journal</a>
       {% endif %}
