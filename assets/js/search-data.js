@@ -441,11 +441,18 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
             },},{
-        id: 'social-email',
-        title: 'email',
+        id: 'social-scholar',
+        title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%64%65%66%63%68%65%72%6E@%62%65%72%6B%65%6C%65%79.%65%64%75", "_blank");
+          window.open("https://scholar.google.com/citations?user=F5P_8NkAAAAJ", "_blank");
+        },
+      },{
+        id: 'social-alphaxiv_username',
+        title: 'Alphaxiv_username',
+        section: 'Socials',
+        handler: () => {
+          window.open("", "_blank");
         },
       },{
         id: 'social-github',
@@ -467,13 +474,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.semanticscholar.org/author/1684692", "_blank");
-        },
-      },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=F5P_8NkAAAAJ", "_blank");
         },
       },{
       id: 'light-theme',
