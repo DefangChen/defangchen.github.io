@@ -519,6 +519,9 @@ ul.task-list input[type="checkbox"] {
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        // Same gold as the navbar "University of California, Berkeley" title.
+        color: var(--berkeley-gold);
+        transition: color 0.2s ease-in-out;
 
         i::before,
         img,
@@ -526,9 +529,28 @@ ul.task-list input[type="checkbox"] {
           width: 2.2rem;
           height: 2.2rem;
         }
+
+        i::before {
+          color: var(--berkeley-gold);
+        }
+
+        &:hover {
+          color: var(--global-theme-color);
+          text-decoration: none;
+
+          i::before {
+            color: var(--global-theme-color);
+          }
+        }
       }
     }
   }
+}
+
+// Gold highlight text, e.g. venue notes in papers.bib `additional_info`.
+// Same color as the navbar "University of California, Berkeley" title.
+.text-berkeley-gold {
+  color: var(--berkeley-gold);
 }
 
 .wechat-modal {
@@ -1510,5 +1532,64 @@ figure.cover {
   /* mouse over link */
   a.cover-link:hover {
     color: #23212d !important;
+  }
+}
+
+// Selected papers on the about page (_includes/selected_papers.liquid):
+// each entry is a light card with a gold accent, pill-shaped buttons,
+// and the author's own name in bold. The full publications page is unchanged.
+.selected-papers ol.bibliography li {
+  border: 1px solid var(--global-divider-color);
+  border-left: 3px solid var(--berkeley-gold);
+  border-radius: 0.5rem;
+  padding: 0.85rem 1.1rem 0.9rem;
+  margin-bottom: 1rem;
+  background-color: var(--global-card-bg-color);
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+
+  // Use the full card width now that the badge column is gone.
+  .row > .col-sm-10 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .title {
+    color: var(--global-theme-color);
+    font-size: 1.05rem;
+    margin-bottom: 0.15rem;
+  }
+
+  // Own name (linked to Google Scholar via _data/coauthors.yml).
+  .author a[href*="F5P_8NkAAAAJ"] {
+    font-weight: 600;
+  }
+
+  .links {
+    margin-top: 0.45rem;
+
+    a.btn {
+      color: var(--global-theme-color);
+      border: 1px solid var(--global-theme-color);
+      border-radius: 999px;
+      padding: 0.15rem 0.85rem;
+      margin-right: 0.3rem;
+      letter-spacing: 0.04em;
+      transition:
+        background-color 0.15s ease,
+        color 0.15s ease;
+
+      &:hover {
+        color: var(--global-bg-color);
+        background-color: var(--global-theme-color);
+        border-color: var(--global-theme-color);
+      }
+    }
   }
 }

@@ -107,6 +107,7 @@
   arxiv={2305.19947},
   pdf={2305.19947v3.pdf},
   abstract={Recent years have witnessed significant progress in developing effective training and fast sampling techniques for diffusion models. A remarkable advancement is the use of stochastic differential equations (SDEs) and their marginal-preserving ordinary differential equations (ODEs) to describe data perturbation and generative modeling in a unified framework. In this paper, we carefully inspect the ODE-based sampling of a popular variance-exploding SDE and reveal several intriguing structures of its sampling dynamics. We discover that the data distribution and the noise distribution are smoothly connected with a quasi-linear sampling trajectory and another implicit denoising trajectory that even converges faster. Meanwhile, the denoising trajectory governs the curvature of the corresponding sampling trajectory and its finite differences yield various second-order samplers used in practice. Furthermore, we establish a theoretical relationship between the optimal ODE-based sampling and the classic mean-shift (mode-seeking) algorithm, with which we can characterize the asymptotic behavior of diffusion models and identify the empirical score deviation.},
+  additional_info={*The earliest work connecting Mean Shift and Diffusion Models*.},
   code={https://github.com/zju-pi/diff-sampler},
 }
 
@@ -200,7 +201,7 @@
   pdf={2506.10177v3.pdf},
   journal_url={https://iopscience.iop.org/article/10.1088/1742-5468/ae17ac},
   abstract={Diffusion-based generative models employ stochastic differential equations (SDEs) and their equivalent probability flow ordinary differential equations (ODEs) to establish a smooth transformation between complex high-dimensional data distributions and tractable prior distributions. In this paper, we reveal a striking geometric regularity in the deterministic sampling dynamics: each simulated sampling trajectory lies within an extremely low-dimensional subspace, and all trajectories exhibit an almost identical ''boomerang'' shape, regardless of the model architecture, applied conditions, or generated content. We characterize several intriguing properties of these trajectories, particularly under closed-form solutions based on kernel-estimated data modeling. We also demonstrate a practical application of the discovered trajectory regularity by proposing a dynamic programming-based scheme to better align the sampling time schedule with the underlying trajectory structure. This simple strategy requires minimal modification to existing ODE-based numerical solvers, incurs negligible computational overhead, and achieves superior image generation performance, especially in regions with only 5-10 function evaluations.},
-  additional_info={*<span style="color:#ff6c0c">Top-tier journal in Statistical Mechanics, [Mathematical Physics](https://scholar.google.com/citations?view_op=top_venues&hl=en&venue=ayQ0efp5E24J.2025&vq=phy_mathematicalphysics)</span>*. *Published more than 30 papers from the Nobel Laureate Giorgio Parisi (Physics, 2021)*.},
+  additional_info={*<span class="text-berkeley-gold">Top-tier journal in Statistical Mechanics, [Mathematical Physics](https://scholar.google.com/citations?view_op=top_venues&hl=en&venue=ayQ0efp5E24J.2025&vq=phy_mathematicalphysics)</span>*. *Published more than 30 papers from the Nobel Laureate Giorgio Parisi (Physics, 2021)*.},
   code={https://github.com/zju-pi/diff-sampler},
 }
 
@@ -229,19 +230,33 @@
   arxiv={2502.19716},
 }
 
+@article{zhan2026decflowedit,
+  abbr={Technical Report},
+  selected={true},
+  bibtex_show={true},
+  title={DecFlowEdit: Self-Localized Flow-based Image Editing via Guidance Decoupling},
+  author={Zhan, Zheyuan and Wang, Can and Chen, Jiawei and Chen, Chun and Lyu, Siwei and Zheng, Zeyu and Chen†, Defang},
+  journal={arXiv preprint arXiv:2609.34237},
+  year={2026},
+  arxiv={2609.34237},
+  abstract={Flow-based image editing (FlowEdit) enables inversion-free semantic changes through the difference between source and target velocities. In this paper, we observe that FlowEdit's default classifier-free guidance (CFG) configuration, with asymmetric source and target scales, causes substantial background leakage. Matching these guidance scales, for example by removing CFG, improves edit-relevant localization but severely degrades editability. To get the best of both worlds, we propose DecFlowEdit, which decouples the optimal guidance scales for localization and for editing in flow-based generative models. In particular, DecFlowEdit first extracts an edit-relevant prior by temporally aggregating velocity differences evaluated without CFG, and then uses this prior to reweight the original updates under default CFG. Our method remains training-free and inversion-free, requiring neither external spatial masks nor attention manipulation. Experiments on PIE-Bench across FLUX, SD3, and SD3.5 show that DecFlowEdit improves background preservation, reducing structure distance by approximately 61 to 73 percent and background LPIPS by 68 to 80 percent relative to FlowEdit at comparable editing fidelity. },
+}
+
 @article{chen2026universal,
   abbr={Technical Report},
   selected={true},
   bibtex_show={true},
   title={On the Universal Structure in Deterministic Generative Diffusion},
   author={Chen, Defang and Zhou, Zhenyu and Wang, Can and Zheng, Zeyu and Lyu, Siwei},
-  journal={Technical Report},
+  journal={arXiv preprint arXiv:2611.10338},
   year={2026},
-  pdf={GaussianFlows.pdf},
+  arxiv={2611.10338},
+  pdf={2611.10338v1.pdf},
   abstract={Diffusion-based generative modeling has emerged as a general computational framework for simulating high-dimensional, structured data across various domains. Understanding its generative mechanisms is paramount for advancing model training and inference in a principled way. Here, we demonstrate that deterministic sampling trajectories share a universal geometric structure invariant to data modalities and diffusion model implementations. This structure can be largely explained by an exactly solvable model based on the optimal linear denoiser.},
   code={https://github.com/zju-pi/GaussianFlows},
   draft={PNASmain.pdf},
 }
+
 
 
 @comment{

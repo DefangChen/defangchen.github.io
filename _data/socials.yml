@@ -15,7 +15,6 @@
 # flickr_id: # your flickr id
 scholar_userid: F5P_8NkAAAAJ # your Google Scholar ID
 alphaxiv_username: defang-chen # your alphaXiv username (alphaxiv.org/@username)
-github_username: DefangChen # your GitHub user name
 # gitlab_username: # your GitLab user name
 # hal_id: # your HAL id (https://hal.science/)
 # ieee_id: # your ieeexplore.ieee.org/author/id
@@ -39,6 +38,7 @@ github_username: DefangChen # your GitHub user name
 # research_gate_profile: # your profile on ResearchGate
 research_gate_profile: Defang-Chen-3
 semanticscholar_id: 1684692 # your Semantic Scholar ID
+github_username: DefangChen # your GitHub user name
 # rss_icon: true # comment this line to hide the RSS icon
 # scopus_id: # your profile on Scopus
 # spotify_id: # your spotify id
