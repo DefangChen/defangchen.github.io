@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/learn/";
           },
+        },{id: "nav-π",
+          title: "π",
+          description: "Ongoing projects",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/pi/";
+          },
         },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
@@ -455,13 +462,6 @@ ninja.data = [{
           window.open("", "_blank");
         },
       },{
-        id: 'social-github',
-        title: 'GitHub',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://github.com/DefangChen", "_blank");
-        },
-      },{
         id: 'social-researchgate',
         title: 'ResearchGate',
         section: 'Socials',
@@ -474,6 +474,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.semanticscholar.org/author/1684692", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/DefangChen", "_blank");
         },
       },{
       id: 'light-theme',
