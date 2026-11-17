@@ -7,7 +7,7 @@ set -euo pipefail
 LIMIT=10000000 # bytes
 ORIG_DIR="${PDF_ORIGINALS_DIR:-$(cd "$(dirname "$0")/.." && pwd)/_pdf_originals}"
 
-for cmd in gs pdfinfo pdftotext; do
+for cmd in gs pdfinfo pdftotext pdfimages; do
   command -v "$cmd" >/dev/null || { echo "missing $cmd (brew install ghostscript poppler)" >&2; exit 1; }
 done
 [ $# -gt 0 ] || { echo "usage: bin/compress-pdf FILE.pdf [...]" >&2; exit 1; }
@@ -15,6 +15,8 @@ done
 size() { stat -f%z "$1" 2>/dev/null || stat -c%s "$1"; }
 pages() { pdfinfo "$1" | awk '/^Pages:/{print $2}'; }
 words() { pdftotext -q "$1" - | wc -w | tr -d ' '; }
+# Image count per page, as "page count" lines (soft masks excluded).
+images() { pdfimages -list "$1" 2>/dev/null | awk 'NR>2 && $3=="image" {c[$1]++} END {for (p in c) print p, c[p]}' | sort -n; }
 
 for pdf in "$@"; do
   if [ "$(size "$pdf")" -le "$LIMIT" ]; then
@@ -25,8 +27,11 @@ for pdf in "$@"; do
   # Highest resolution that fits; plot labels start to blur at 150 dpi.
   tmp="$(mktemp "${TMPDIR:-/tmp}/compress-pdf.XXXXXX")"
   dpi_used=""
+  # LeaveColorUnchanged overrides /printer's device-independent color conversion, which made
+  # Ghostscript 10.07 silently drop soft-masked images inside embedded figure PDFs (2610.25918, page 18).
   for dpi in 300 220 200 150; do
     gs -q -dNOPAUSE -dBATCH -dSAFER -sDEVICE=pdfwrite -dPDFSETTINGS=/printer -dCompatibilityLevel=1.6 \
+      -sColorConversionStrategy=LeaveColorUnchanged \
       -dColorImageResolution=$dpi -dGrayImageResolution=$dpi -sOutputFile="$tmp" "$pdf"
     if [ "$(size "$tmp")" -le "$LIMIT" ]; then dpi_used=$dpi; break; fi
   done
@@ -38,6 +43,12 @@ for pdf in "$@"; do
   wo=$(words "$pdf"); wn=$(words "$tmp"); diff=$(( wo > wn ? wo - wn : wn - wo ))
   if [ "$(pages "$pdf")" != "$(pages "$tmp")" ] || [ $(( diff * 100 )) -gt "$wo" ]; then
     echo "$pdf: compressed copy lost pages or text, left unchanged" >&2; rm -f "$tmp"; continue
+  fi
+
+  # Refuse it if any page has fewer images: Ghostscript can drop figures without an error.
+  lost=$(join -a1 -e0 -o 0,1.2,2.2 <(images "$pdf") <(images "$tmp") | awk '$3 < $2 {printf " p%s(%s->%s)", $1, $2, $3}')
+  if [ -n "$lost" ]; then
+    echo "$pdf: compressed copy lost images on$lost, left unchanged" >&2; rm -f "$tmp"; continue
   fi
 
   mkdir -p "$ORIG_DIR"

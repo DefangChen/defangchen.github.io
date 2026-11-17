@@ -1,0 +1,14 @@
+# Invited talks shown on the homepage, newest first.
+# Fields: date, type, venue. Optional: title (shown in italics), url (links the title).
+
+- date: Nov. 2026
+  type: Guest Lecture
+  venue: UC Berkeley
+
+- date: Oct. 2026
+  type: Seminar
+  venue: UC Berkeley
+
+- date: Sep. 2026
+  type: Seminar
+  venue: Kanazawa University (online)

@@ -215,11 +215,8 @@
       {% if entry.abstract %}
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
       {% endif %}
-      {% if entry.doi %}
-        <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
-      {% endif %}
       {% if entry.arxiv %}
-        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+        <a href="https://www.alphaxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">alphaXiv</a>
       {% endif %}
       {% if entry.bibtex_show %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
@@ -279,6 +276,10 @@
       {% endif %}
       {% if entry.journal_url %}
         <a href="{{ entry.journal_url }}" class="btn btn-sm z-depth-0" role="button">Journal</a>
+      {% endif %}
+      {% comment %} DOI sits with Journal at the end of the row (moved from after Abs). {% endcomment %}
+      {% if entry.doi %}
+        <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
       {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}

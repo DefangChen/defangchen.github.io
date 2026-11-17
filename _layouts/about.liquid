@@ -79,6 +79,34 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    <!-- Invited talks (from _data/talks.yml) -->
+    {% if page.permalink == '/' and site.data.talks %}
+      <h2 style="margin-top: 2.5rem;">
+        Invited Talks
+        <span style="font-size:1.2rem; margin-left:0.45rem;">(~1 hour)</span>
+      </h2>
+      <ul class="talks">
+        {% for talk in site.data.talks %}
+          <li>
+            <span class="talk-date">{{ talk.date }}</span>
+            <span class="talk-body">
+              <span class="talk-type">{{ talk.type }}</span>, {{ talk.venue }}
+              {%- if talk.title -%}
+                .
+                <em>
+                  {%- if talk.url -%}
+                    <a href="{{ talk.url }}" target="_blank" rel="noopener noreferrer">{{ talk.title }}</a>
+                  {%- else -%}
+                    {{ talk.title }}
+                  {%- endif -%}
+                </em>
+              {%- endif %}
+            </span>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
     {% if page.permalink == '/' %}
       <hr class="closing-divider">
       <div class="closing-notes">
